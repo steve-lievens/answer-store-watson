@@ -1,10 +1,10 @@
 // import dependencies and initialize express
-const express = require("express");
-const path = require("path");
-const bodyParser = require("body-parser");
-const helmet = require("helmet");
-const answerRoutes = require("./routes/answers-route.js");
-const healthRoutes = require("./routes/health-route.js");
+const express = require('express');
+const path = require('path');
+const bodyParser = require('body-parser');
+const helmet = require('helmet');
+const answerRoutes = require('./routes/answers-route.js');
+const healthRoutes = require('./routes/health-route.js');
 
 const app = express();
 
@@ -19,11 +19,11 @@ if (process.env.VCAP_APPLICATION) {
 }
 
 // access to static files
-app.use(express.static(path.join("public")));
+app.use(express.static(path.join('public')));
 
 // routes and api calls
-app.use("/health", healthRoutes);
-app.use("/api/answers", answerRoutes);
+app.use('/health', healthRoutes);
+app.use('/api/answers', answerRoutes);
 
 // start node server
 const port = process.env.PORT || 3000;
@@ -33,7 +33,7 @@ app.listen(port, () => {
 
 // error handler for unmatched routes or api calls
 app.use((req, res, next) => {
-  res.sendFile(path.join(__dirname, "../public", "404.html"));
+  res.sendFile(path.join(__dirname, '../public', '404.html'));
 });
 
 module.exports = app;

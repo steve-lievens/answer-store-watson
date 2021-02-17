@@ -1,6 +1,6 @@
-const chai = require("chai");
-const mockRequire = require("mock-require");
-const request = require("supertest");
+const chai = require('chai');
+const mockRequire = require('mock-require');
+const request = require('supertest');
 
 const expect = chai.expect;
 
@@ -12,11 +12,11 @@ class cloudantMock {
         return {
           insert: (name) =>
             Promise.resolve({
-              _id: "id",
-              display_id: "display_id",
-              language: "en-US",
-              answerText: "testing",
-              timestamp: "timestamp",
+              _id: 'id',
+              display_id: 'display_id',
+              language: 'en-US',
+              answerText: 'testing',
+              timestamp: 'timestamp',
             }),
         };
       },
@@ -26,8 +26,8 @@ class cloudantMock {
 
 let server;
 before(() => {
-  mockRequire("@cloudant/cloudant", cloudantMock);
-  server = require("../../server/server");
+  mockRequire('@cloudant/cloudant', cloudantMock);
+  server = require('../../server/server');
 });
 
 after(() => {
@@ -35,63 +35,63 @@ after(() => {
 });
 
 // example functional tests of routes
-describe("GET /", () => {
-  it("responds with homepage", () => {
+describe('GET /', () => {
+  it('responds with homepage', () => {
     return request(server)
-      .get("/")
-      .expect("Content-Type", "text/html; charset=UTF-8")
+      .get('/')
+      .expect('Content-Type', 'text/html; charset=UTF-8')
       .expect(200)
       .then((response) => {
-        expect(response.text).to.include("IBM Cloud - Node.js + Cloudant");
+        expect(response.text).to.include('IBM Cloud - Node.js + Cloudant');
       });
   });
 });
 
-describe("GET /health", () => {
-  it("responds with json", () => {
+describe('GET /health', () => {
+  it('responds with json', () => {
     return request(server)
-      .get("/health/")
-      .set("Accept", "application/json")
-      .expect("Content-Type", "application/json; charset=utf-8")
+      .get('/health/')
+      .set('Accept', 'application/json')
+      .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(200, {
-        status: "UP",
+        status: 'UP',
       });
   });
 });
 
-describe("POST /fake/route", () => {
-  it("responds with not found page", () => {
+describe('POST /fake/route', () => {
+  it('responds with not found page', () => {
     return request(server)
-      .post("/fake/route")
-      .expect("Content-Type", "text/html; charset=UTF-8")
+      .post('/fake/route')
+      .expect('Content-Type', 'text/html; charset=UTF-8')
       .expect(200)
       .then((response) => {
         expect(response.text).to.include(
-          "Whoops! Looks like you got lost or couldn't find your page."
+          "Whoops! Looks like you got lost or couldn't find your page.",
         );
       });
   });
 });
 
-describe("POST /api/answers", () => {
-  it("responds with created", () => {
+describe('POST /api/answers', () => {
+  it('responds with created', () => {
     return request(server)
-      .post("/api/answers")
+      .post('/api/answers')
       .send({
-        _id: "displayid:en-US",
-        display_id: "displayid",
-        language: "en-US",
-        answerText: "testing",
-        timestamp: "2021-02-17T12:18:43.123Z",
+        _id: 'displayid:en-US',
+        display_id: 'displayid',
+        language: 'en-US',
+        answerText: 'testing',
+        timestamp: '2021-02-17T12:18:43.123Z',
       })
-      .expect("Content-Type", "application/json; charset=utf-8")
+      .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(400);
   });
 
-  it("responds with bad request", () => {
+  it('responds with bad request', () => {
     return request(server)
-      .post("/api/answers")
-      .expect("Content-Type", "application/json; charset=utf-8")
+      .post('/api/answers')
+      .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(400);
   });
 });
