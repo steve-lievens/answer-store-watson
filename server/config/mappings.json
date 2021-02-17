@@ -2,6 +2,7 @@
   "version": 1,
   "cloudant_url": {
     "searchPatterns": [
+      "user-provided:cloudant-for-answerstore:answerstore-key",
       "file:/server/localdev-config.json:$.cloudant_url",
       "env:CLOUDANT_URL",
       "cloudfoundry:cloudant-for-answerstore"

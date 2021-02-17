@@ -37,7 +37,7 @@ stages:
           #!/bin/bash
           cf create-service cloudantNoSQLDB lite cloudant-for-answerstore
           #cf create-service cloudantNoSQLDB standard cloudant-for-answerstore
-          cf create-service-key cloudant-for-answerstore
+          cf create-service-key cloudant-for-answerstore answerstore-key
 
           cf bind-service $CF_APP cloudant-for-answerstore
           # Push app
