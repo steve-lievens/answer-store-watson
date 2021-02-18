@@ -30,6 +30,10 @@
       "description": "API key description",
       "type": "string"
     },
+    "cloudant-for-answerstore-url": {
+      "description": "CLOUDANT DB URL",
+      "type": "string"
+    },
     "prod-app-name": {
       "description": {
         "$ref": "#/messages/deploy.appDescription"
