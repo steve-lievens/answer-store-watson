@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 messages:
   $i18n: locales.yml
 template:
@@ -6,7 +6,7 @@ template:
     $ref: "#/messages/template.name"
   description:
     $ref: "#/messages/template.description"
-  header: '![](toolchain.svg?localize)'
+  header: "![](toolchain.svg?localize)"
   icon: icon.svg
   required:
     - sample-build
@@ -17,7 +17,7 @@ template:
     git branch: >-
       [master](https://github.com/foward/answer_store_watson/tree/master)
 toolchain:
-  name: 'answerstore-toolchain-{{timestamp}}'
+  name: "answerstore-toolchain-{{timestamp}}"
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
@@ -25,9 +25,9 @@ services:
   sample-repo:
     service_id: githubpublic
     parameters:
-      repo_name: '{{toolchain.name}}'
-      repo_url: 'https://github.com/foward/answer_store_watson'
-      type: clone
+      repo_name: "{{toolchain.name}}"
+      repo_url: "https://github.com/foward/answer_store_watson"
+      type: fork
       has_issues: true
       enable_traceability: true
   sample-build:
@@ -35,24 +35,26 @@ services:
     parameters:
       services:
         - sample-repo
-      name: '{{services.sample-repo.parameters.repo_name}}'
+      name: "{{services.sample-repo.parameters.repo_name}}"
       ui-pipeline: true
       configuration:
         content:
           $text: pipeline.yml
         env:
           SAMPLE_REPO: sample-repo
-          CF_APP_NAME: '{{form.pipeline.parameters.prod-app-name}}'
-          PROD_SPACE_NAME: '{{form.pipeline.parameters.prod-space}}'
-          PROD_ORG_NAME: '{{form.pipeline.parameters.prod-organization}}'
-          PROD_REGION_ID: '{{form.pipeline.parameters.prod-region}}'
-          API_KEY: '{{form.pipeline.parameters.api-key}}'
+          CF_APP_NAME: "{{form.pipeline.parameters.prod-app-name}}"
+          PROD_SPACE_NAME: "{{form.pipeline.parameters.prod-space}}"
+          PROD_ORG_NAME: "{{form.pipeline.parameters.prod-organization}}"
+          PROD_REGION_ID: "{{form.pipeline.parameters.prod-region}}"
+          API_KEY: "{{form.pipeline.parameters.api-key}}"
+          CLOUDANT_URL: "{{form.pipeline.parameters.cloudant-for-answerstore-url}}"
+
         execute: true
   webide:
     service_id: orion
 form:
   pipeline:
     parameters:
-      prod-app-name: '{{services.sample-repo.parameters.repo_name}}'
+      prod-app-name: "{{services.sample-repo.parameters.repo_name}}"
     schema:
       $ref: deploy.json

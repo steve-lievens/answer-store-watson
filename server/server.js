@@ -5,8 +5,10 @@ const bodyParser = require("body-parser");
 const helmet = require("helmet");
 const answerRoutes = require("./routes/answers-route.js");
 const healthRoutes = require("./routes/health-route.js");
-
+require("dotenv").config();
 const app = express();
+
+console.log(process.env.CLOUDANT_URL);
 
 // enable parsing of http request body
 app.use(bodyParser.urlencoded({ extended: false }));

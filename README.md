@@ -22,7 +22,11 @@ You can access the cloud native microservice capabilities at the following endpo
 
 ## Steps
 
-You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/nodejs-+-cloudant) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` endpoint to build out your cloud native application.
+You can deploy this application to IBM Cloud or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` endpoint to build out your cloud native application.
+
+## Pre-requisites
+
+Login to IBM Cloud and create an instance of a `Cloudant` database, then check the service credentials and keep the `CLOUDANT_URL` to enter in the toolchain form (if you deploy via button), or to add in the `.ENV` file
 
 ### Deploying to IBM Cloud
 
@@ -30,7 +34,7 @@ You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/a
 <a href="https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/foward/answer_store_watson&branch=master"><img src="https://cloud.ibm.com/devops/setup/deploy/button.png" alt="Deploy to IBM Cloud"></a>
 </p>
 
-Click **Deploy to IBM Cloud** to deploy this same application to IBM Cloud. This option creates a deployment pipeline, complete with a hosted GitLab project and a DevOps toolchain. You can deploy your app to Cloud Foundry, a Kubernetes cluster, or a Red Hat OpenShift cluster. OpenShift is available only through a standard cluster, which requires you to have a billable account.
+Click **Deploy to IBM Cloud** to deploy this same application to IBM Cloud. This option creates a deployment pipeline, complete with a hosted GitLab project and a DevOps toolchain.
 
 [IBM Cloud DevOps](https://www.ibm.com/cloud/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud.
 
@@ -48,7 +52,7 @@ Once the Node toolchain has been installed, you can download the project depende
 npm install
 ```
 
-Please make sure you have the file `localdev-config.json` in the folder `server`, there you need to configure the cloudant credentials only for local developments, since in the cloud you need to attach the cloudant to this app.
+Please rename the `.env.EXAMPLE` to `.env` and add the `CLOUDANT_URL`.
 
 To run your application locally:
 

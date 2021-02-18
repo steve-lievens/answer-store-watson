@@ -1,34 +1,35 @@
 // import dependencies
-const IBMCloudEnv = require('ibm-cloud-env');
-IBMCloudEnv.init('/server/config/mappings.json');
+const IBMCloudEnv = require("ibm-cloud-env");
+IBMCloudEnv.init("/server/config/mappings.json");
 
 // initialize Cloudant
-const CloudantSDK = require('@cloudant/cloudant');
-const cloudant = new CloudantSDK(IBMCloudEnv.getString('cloudant_url'));
+const CloudantSDK = require("@cloudant/cloudant");
+
+const cloudant = new CloudantSDK(IBMCloudEnv.getString("cloudant_url"));
 
 // create mydb database if it does not already exist
 cloudant.db
-  .create('mydb')
+  .create("mydb")
   .then((data) => {
-    console.log('mydb database created');
+    console.log("mydb database created");
   })
   .catch((error) => {
-    if (error.error === 'file_exists') {
-      console.log('mydb database already exists');
+    if (error.error === "file_exists") {
+      console.log("mydb database already exists");
     } else {
       console.log(error);
-      console.log('Error occurred when creating mydb database', error.error);
+      console.log("Error occurred when creating mydb database", error.error);
     }
   });
-const mydb = cloudant.db.use('mydb');
+const mydb = cloudant.db.use("mydb");
 
 exports.removeAnswer = (req, res, next) => {
-  console.log('In route - removeAnswer');
+  console.log("In route - removeAnswer");
 
   let id = req.body.id;
   let rev = req.body.rev;
 
-  console.log('Deleting document ' + id);
+  console.log("Deleting document " + id);
   // supply the id and revision to be deleted
   return mydb
     .destroy(id, rev)
@@ -37,9 +38,9 @@ exports.removeAnswer = (req, res, next) => {
       return res.status(200).json(result);
     })
     .catch((error) => {
-      console.log('Remove answer failed');
+      console.log("Remove answer failed");
       return res.status(500).json({
-        message: 'Remove answer failed.',
+        message: "Remove answer failed.",
         error: error,
       });
     });
@@ -47,7 +48,7 @@ exports.removeAnswer = (req, res, next) => {
 
 // get answers from database
 exports.getAnswers = (req, res, next) => {
-  console.log('In route - getAnswers');
+  console.log("In route - getAnswers");
   return mydb
     .list({ include_docs: true })
     .then((fetchedAnswers) => {
@@ -64,13 +65,13 @@ exports.getAnswers = (req, res, next) => {
         };
         row = row + 1;
       });
-      console.log('Get answers successful');
+      console.log("Get answers successful");
       return res.status(200).json(answers);
     })
     .catch((error) => {
-      console.log('Get answers failed');
+      console.log("Get answers failed");
       return res.status(500).json({
-        message: 'Get answers failed.',
+        message: "Get answers failed.",
         error: error,
       });
     });
@@ -78,9 +79,9 @@ exports.getAnswers = (req, res, next) => {
 
 // add name to database
 exports.addAnswer = (req, res, next) => {
-  console.log('In route - addAnswer');
+  console.log("In route - addAnswer");
   let answerUnit = {
-    _id: req.body.id + ':' + req.body.language,
+    _id: req.body.id + ":" + req.body.language,
     display_id: req.body.id,
     language: req.body.language,
     answerText: req.body.answerText,
@@ -90,7 +91,7 @@ exports.addAnswer = (req, res, next) => {
   return mydb
     .insert(answerUnit)
     .then((addedAnswer) => {
-      console.log('Add answer successful');
+      console.log("Add answer successful");
       return res.status(201).json({
         _id: addedAnswer.id,
         display_id: addedAnswer.display_id,
@@ -100,9 +101,9 @@ exports.addAnswer = (req, res, next) => {
       });
     })
     .catch((error) => {
-      console.log('Add answer failed');
+      console.log("Add answer failed");
       return res.status(500).json({
-        message: 'Add answer failed.',
+        message: "Add answer failed.",
         error: error,
       });
     });

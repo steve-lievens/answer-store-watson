@@ -7,13 +7,22 @@
   </head>
 
   <body>
-    <!-- <div class=logo-center>
-    <img id="logo" src="logo.png"></img>
-  </div> -->
-    <h2 class="logo-center">Test Answer Store for Watson Assistant</h2>
-    <h3 class="logo-center">
-      Disclaimer: This is only for testing purposes, please don't use for production applications
-    </h3>
+    <div class="logo-center">
+      <h2>Test Answer Store for Watson Assistant</h2>
+      <h3>
+        Disclaimer: This is only for testing purposes, please don't use for production applications
+      </h3>
+      <p class="logo-center">
+        <a href="https://github.com/foward/answer_store_watson" target="_blank">Github</a> |
+        <a href="#" target="_blank">Medium Post</a> |
+        <a
+          href="https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/foward/answer_store_watson&branch=master"
+          ><img
+            src="https://cloud.ibm.com/devops/setup/deploy/button.png"
+            alt="Deploy to IBM Cloud"
+        /></a>
+      </p>
+    </div>
     <div id="container">
       <p>Add an item to the database:</p>
 
@@ -36,10 +45,15 @@
 
         <div class="row">
           <div class="col-25">
-            <label>Language in ISO: </label>
+            <label
+              >Language Code
+              <a target="_blank" href="https://cloud.ibm.com/apidocs/language-translator#identify">
+                WLT Language codes
+              </a>
+            </label>
           </div>
           <div class="col-25">
-            <input type="text" id="language" name="language" placeholder="en-US" required />
+            <input type="text" id="language" name="language" placeholder="en" required />
           </div>
         </div>
 

@@ -1,13 +1,4 @@
 {
   "port": 3000,
-  "cloudant_url": "",
-  "cloudant_apikey": "",
-  "cloudant_host": "",
-  "cloudant_iam_apikey_description": "",
-  "cloudant_iam_apikey_name": "",
-  "cloudant_iam_role_crn": "",
-  "cloudant_iam_serviceid_crn": "",
-  "cloudant_password": "",
-  "cloudant_port": 443,
-  "cloudant_username": ""
+  "cloudant_url": ""
 }

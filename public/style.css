@@ -16,10 +16,28 @@ html, body {
   color: #5f5c5c;
   width: 600px;
   margin: auto;
- 
-
 }
 
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: silver;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
 #answers_table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -39,7 +57,7 @@ html, body {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
+  background-color: rgb(90, 90, 95);
   color: white;
 }
 /* Form */
@@ -62,7 +80,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -78,7 +96,7 @@ textarea[type=text] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: silver;
 }
 
 .container {
