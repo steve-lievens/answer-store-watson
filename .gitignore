@@ -4,3 +4,7 @@ node_modules_linux
 .nyc_output
 server/localdev-config.json
 .env
+.DS_Store
+
+server/.DS_Store
+test/.DS_Store
