@@ -33,16 +33,13 @@ stages:
           space: ${PROD_SPACE_NAME}
           application: ${CF_APP_NAME}
           api_key: ${API_KEY}
+          cloudant_url: ${CLOUDANT_URL}
         script: |
           #!/bin/bash
-          cf create-service cloudantNoSQLDB lite cloudant-for-answerstore
-          #cf create-service cloudantNoSQLDB standard cloudant-for-answerstore
-          cf create-service-key cloudant-for-answerstore answerstore-key
 
-          cf bind-service $CF_APP cloudant-for-answerstore
           # Push app
           if ! cf app $CF_APP; then  
-            cf push $CF_APP
+            cf push $CF_APP --no-start
           else
             OLD_CF_APP=${CF_APP}-OLD-$(date +"%s")
             rollback() {
@@ -57,9 +54,27 @@ stages:
             set -e
             trap rollback ERR
             cf rename $CF_APP $OLD_CF_APP
-            cf push $CF_APP
+            cf push $CF_APP --no-start
             cf delete $OLD_CF_APP -f
           fi
+
+          SERVICE=$(cf services | grep cloudantNoSQLDB | awk -FcloudantNoSQLDB '{print $1}' | sed -e 's/[[:space:]]*$//')
+          if [ '$SERVICE' != '' ]; then
+              cf bind-service ${CF_APP} "${SERVICE}"
+          else
+              cf create-service cloudantNoSQLDB lite cloudant-for-answerstore
+               #cf create-service cloudantNoSQLDB standard cloudant-for-answerstore
+              cf create-service-key cloudant-for-answerstore answerstore-key
+              cf bind-service $CF_APP cloudant-for-answerstore
+          fi
+
+          cf start ${CF_APP}
+
+
+
+
+
+
           # Export app name and URL for use in later Pipeline jobs
           export CF_APP_NAME="$CF_APP"
           export APP_URL=http://$(cf app $CF_APP_NAME | grep -e urls: -e routes: | awk '{print $2}')
