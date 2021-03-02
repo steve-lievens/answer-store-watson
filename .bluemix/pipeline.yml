@@ -63,8 +63,11 @@ stages:
               cf bind-service ${CF_APP} "${SERVICE}"
           else
               cf create-service cloudantNoSQLDB lite cloudant-for-answerstore
-               #cf create-service cloudantNoSQLDB standard cloudant-for-answerstore
+              #cf create-service cloudantNoSQLDB standard cloudant-for-answerstore
               cf create-service-key cloudant-for-answerstore answerstore-key
+              cf service-key cloudant-for-answerstore answerstore-key | tail -n +2 > cloudant.json
+              export CLOUDANT_URL=$(jq --raw-output '.url' cloudant.json)
+              export CLOUDANT_CREDS=$(jq ". + {database: \"${CLOUDANT_DATABASE}\"}" cloudant.json)
               cf bind-service $CF_APP cloudant-for-answerstore
           fi
 
@@ -79,4 +82,4 @@ stages:
           export CF_APP_NAME="$CF_APP"
           export APP_URL=http://$(cf app $CF_APP_NAME | grep -e urls: -e routes: | awk '{print $2}')
           # View logs
-          #cf logs "${CF_APP}" --recent
+          cf logs "${CF_APP}" --recent
