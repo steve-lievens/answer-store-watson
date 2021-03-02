@@ -1,0 +1,93 @@
+{
+  "__ow_headers": {
+    "accept-encoding": "gzip",
+    "authorization": ".................",
+    "cdn-loop": "cloudflare",
+    "cf-connecting-ip": "Xxx.xxx.xxx.xxx",
+    "cf-ipcountry": "US",
+    "cf-ray": "xxxxx-IAD",
+    "cf-request-id": "xxxxxxxxxx",
+    "content-type": "application/json",
+    "host": "eu-de.functions.appdomain.cloud",
+    "user-agent": "okhttp/3.12.2",
+    "x-forwarded-for": "xxx.xxx.xxx.xxx, xxx.xxx.xxx.xxx",
+    "x-forwarded-host": "eu-de.functions.appdomain.cloud",
+    "x-forwarded-port": "443",
+    "x-forwarded-proto": "https",
+    "x-global-k8fdic-transaction-id": "xxxxxxxx",
+    "x-real-ip": "xx.xx.xxx.xx",
+    "x-request-id": "xxxxxxxxxx"
+  },
+  "__ow_method": "post",
+  "__ow_path": "",
+  "event": {
+    "name": "message_processed"
+  },
+  "options": {},
+  "payload": {
+    "context": {
+      "global": {
+        "session_id": "xxxx-xx-xx-96xxx33-xxxx",
+        "system": {
+          "timezone": "Europe/Berlin",
+          "turn_count": 2,
+          "user_id": "anonymous_IBMuid-4dda509f-ed29-4f97-99d8-9985dc484a24"
+        }
+      },
+      "integrations": {
+        "chat": {
+          "browser_info": {
+            "browser_OS": "Mac OS",
+            "browser_name": "firefox",
+            "browser_version": "85.0.0",
+            "client_ip_address": "xxx.xxx.xxx.xxx",
+            "ip_address_list": ["xxx.xxx.xxx.xxx", " xxx.xxx.xx.xxx"],
+            "language": "en-US",
+            "page_url": "https://us-east.assistant.watson.cloud.ibm.com/us-east/crn:v1:bluemix:public:conversation:us-east:XXXXXXXX",
+            "screen_resolution": "width: 2560, height: 1440",
+            "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.16; rv:85.0) Gecko/20100101 Firefox/85.0"
+          }
+        }
+      },
+      "skills": {
+        "main skill": {
+          "system": {
+            "state": "XXXXXX=="
+          },
+          "user_defined": {
+            "language": "es",
+            "original_input": "hola que tal?"
+          }
+        }
+      }
+    },
+    "output": {
+      "debug": {
+        "branch_exited": true,
+        "branch_exited_reason": "completed",
+        "log_messages": [],
+        "nodes_visited": [
+          {
+            "conditions": "#greeting",
+            "dialog_node": "node_9_1614158779903",
+            "title": "#greet"
+          }
+        ]
+      },
+      "entities": [],
+      "generic": [
+        {
+          "response_type": "text",
+          "text": "Welcome from Dialog"
+        }
+      ],
+      "intents": [
+        {
+          "confidence": 1,
+          "intent": "greeting"
+        }
+      ]
+    },
+    "user_id": "anonymous_IBMuid-4dda509f-ed29-4f97-99d8-9985dc484a24"
+  }
+}

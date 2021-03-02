@@ -8,3 +8,4 @@ server/localdev-config.json
 
 server/.DS_Store
 test/.DS_Store
+cloud_functions/NOT_UPLOAD

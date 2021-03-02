@@ -1,0 +1,82 @@
+{
+  "__ow_headers": {
+    "accept-encoding": "gzip",
+    "authorization": "xxxxxx",
+    "cdn-loop": "cloudflare",
+    "cf-connecting-ip": "xxxxx",
+    "cf-ipcountry": "US",
+    "cf-ray": "xxxxxxxxx-IAD",
+    "cf-request-id": "08759abc6e00000da60da81000000001",
+    "content-type": "application/json",
+    "host": "eu-de.functions.appdomain.cloud",
+    "user-agent": "okhttp/3.12.2",
+    "x-forwarded-for": "xxxxxxxx, xxxxx",
+    "x-forwarded-host": "eu-de.functions.appdomain.cloud",
+    "x-forwarded-port": "443",
+    "x-forwarded-proto": "https",
+    "x-global-k8fdic-transaction-id": "xxxxxx",
+    "x-real-ip": "xxxxxxx3",
+    "x-request-id": "xxxxx"
+  },
+  "__ow_method": "post",
+  "__ow_path": "",
+  "blocking": "true",
+  "event": {
+    "name": "message_received"
+  },
+  "options": {},
+  "payload": {
+    "context": {
+      "global": {
+        "system": {
+          "timezone": "Europe/Berlin",
+          "user_id": "anonymous_IBMuid-4xxxxxxx"
+        }
+      },
+      "integrations": {
+        "chat": {
+          "browser_info": {
+            "browser_OS": "Mac OS",
+            "browser_name": "firefox",
+            "browser_version": "85.0.0",
+            "client_ip_address": "xxxxxxxxxxx",
+            "ip_address_list": ["8xxxxxxxx", " xxxxxxx"],
+            "language": "en-US",
+            "page_url": "https://us-east.assistant.watson.cloud.ibm.com/us-east/crn:v1:bluemix:public:conversation:us-east:a~2",
+            "screen_resolution": "width: 2560, height: 1440",
+            "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.16; rv:85.0) Gecko/20100101 Firefox/85.0"
+          }
+        }
+      },
+      "skills": {
+        "main skill": {
+          "system": {
+            "state": "xxxxx"
+          },
+          "user_defined": {
+            "language": "es",
+            "original_input": "hola que tal?"
+          }
+        }
+      }
+    },
+    "input": {
+      "message_type": "text",
+      "options": {
+        "alternate_responses": false,
+        "debug": true,
+        "disambiguation": {
+          "alternate_responses": false
+        },
+        "export": true,
+        "return_context": true,
+        "suggestion_only": false
+      },
+      "source": {
+        "id": "anonymous_IBMuid-4xxxxxxxx",
+        "type": "user"
+      },
+      "text": "hello how about?"
+    }
+  }
+}
