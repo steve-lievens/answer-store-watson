@@ -23,7 +23,7 @@ toolchain:
       $ref: "#/messages/template.gettingStarted"
 services:
   sample-repo:
-    service_id: githubpublic
+    service_id: githubconsolidated
     parameters:
       repo_name: "{{toolchain.name}}"
       repo_url: "https://github.com/foward/answer-store-watson"
