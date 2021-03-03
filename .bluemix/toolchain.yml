@@ -27,6 +27,7 @@ services:
     parameters:
       repo_name: "{{toolchain.name}}"
       repo_url: "https://github.com/foward/answer-store-watson"
+      source_repo_url: "https://github.com/foward/answer-store-watson"
       type: clone
       has_issues: true
       enable_traceability: true
