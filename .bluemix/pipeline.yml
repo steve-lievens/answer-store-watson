@@ -58,14 +58,17 @@ stages:
             cf delete $OLD_CF_APP -f
           fi
 
-          SERVICE=$(cf services | grep cloudantNoSQLDB | awk -FcloudantNoSQLDB '{print $1}' | sed -e 's/[[:space:]]*$//')
+          SERVICE=$(cf services | grep cloudantNoSQLDB | awk -F cloudantNoSQLDB 'NR==1{print $1}' | sed -e 's/[[:space:]]*$//')
           if [ '$SERVICE' != '' ]; then
+              cf create-service-key "${SERVICE}" answerstore-key
+              cf service-key "${SERVICE}" answerstore-key | tail -n 12 > cloudant.json
+              export CLOUDANT_URL=$(jq --raw-output '.url' cloudant.json)
               cf bind-service ${CF_APP} "${SERVICE}"
           else
               cf create-service cloudantNoSQLDB lite cloudant-for-answerstore
               #cf create-service cloudantNoSQLDB standard cloudant-for-answerstore
               cf create-service-key cloudant-for-answerstore answerstore-key
-              cf service-key cloudant-for-answerstore answerstore-key | tail -n +2 > cloudant.json
+              cf service-key cloudant-for-answerstore answerstore-key | tail -n 12 > cloudant.json
               export CLOUDANT_URL=$(jq --raw-output '.url' cloudant.json)
               export CLOUDANT_CREDS=$(jq ". + {database: \"${CLOUDANT_DATABASE}\"}" cloudant.json)
               cf bind-service $CF_APP cloudant-for-answerstore
