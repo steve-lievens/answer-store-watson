@@ -10,9 +10,11 @@ var cloudant = new CloudantSDK({
   plugins: { iamauth: { iamApiKey: IBMCloudEnv.getString("cloudant_apikey") } },
 });
 
+const databaseName = "answer_store";
+
 // create mydb database if it does not already exist
 cloudant.db
-  .create("answer_store")
+  .create(databaseName)
   .then((data) => {
     console.log("answer_store database created");
   })
@@ -24,7 +26,7 @@ cloudant.db
       console.log("Error occurred when creating answer_store database", error.error);
     }
   });
-const answerStoreDB = cloudant.db.use("answer_store");
+const answerStoreDB = cloudant.db.use(databaseName);
 
 exports.removeAnswer = (req, res, next) => {
   console.log("In route - removeAnswer");
@@ -58,16 +60,18 @@ exports.getAnswers = (req, res, next) => {
       let answers = [];
       let row = 0;
       fetchedAnswers.rows.forEach((fetchedName) => {
+        console.log(fetchedName);
         answers[row] = {
           _id: fetchedName.id,
-          language: fetchedName.doc.language,
-          answerText: fetchedName.doc.answerText,
+          en: fetchedName.doc.en,
+          es: fetchedName.doc.es,
+          fr: fetchedName.doc.fr,
           timestamp: fetchedName.doc.timestamp,
-          display_id: fetchedName.doc.display_id,
           rev: fetchedName.doc._rev,
         };
         row = row + 1;
       });
+      console.log(answers);
       console.log("Get answers successful");
       return res.status(200).json(answers);
     })
@@ -84,10 +88,10 @@ exports.getAnswers = (req, res, next) => {
 exports.addAnswer = (req, res, next) => {
   console.log("In route - addAnswer");
   let answerUnit = {
-    _id: req.body.id + ":" + req.body.language,
-    display_id: req.body.id,
-    language: req.body.language,
-    answerText: req.body.answerText,
+    _id: req.body.id,
+    en: req.body.en,
+    es: req.body.es,
+    fr: req.body.fr,
     timestamp: req.body.timestamp,
   };
   console.log(answerUnit);
@@ -97,9 +101,9 @@ exports.addAnswer = (req, res, next) => {
       console.log("Add answer successful");
       return res.status(201).json({
         _id: addedAnswer.id,
-        display_id: addedAnswer.display_id,
-        language: addedAnswer.language,
-        answerText: addedAnswer.answerText,
+        en: addedAnswer.en,
+        es: addedAnswer.es,
+        fr: addedAnswer.fr,
         timestamp: addedAnswer.timestamp,
       });
     })

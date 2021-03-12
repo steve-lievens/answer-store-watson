@@ -7,18 +7,21 @@ getAnswers();
 function captureSubmit(event) {
   // log.textContent = `Form Submitted! Time stamp: ${event.timeStamp}`;
   let answerID = document.getElementById("answerID").value;
-  let language = document.getElementById("language").value;
-  let answerText = document.getElementById("answerText").value;
+  let en = document.getElementById("en").value;
+  let es = document.getElementById("es").value;
+  let fr = document.getElementById("fr").value;
 
   let answerContent = {
     id: sanitize(answerID),
-    language: sanitize(language),
-    answerText: sanitize(answerText),
+    en: sanitize(en),
+    fr: sanitize(fr),
+    es: sanitize(es),
   };
   // clear Form values
   document.getElementById("answerID").value = "";
-  document.getElementById("language").value = "";
-  document.getElementById("answerText").value = "";
+  document.getElementById("en").value = "";
+  document.getElementById("es").value = "";
+  document.getElementById("fr").value = "";
   addAnswer(answerContent);
   event.preventDefault();
 }
@@ -52,10 +55,12 @@ function addAnswer(answer) {
   let data =
     "id=" +
     answer.id +
-    "&language=" +
-    answer.language +
-    "&answerText=" +
-    answer.answerText +
+    "&en=" +
+    answer.en +
+    "&es=" +
+    answer.es +
+    "&fr=" +
+    answer.fr +
     "&timestamp=" +
     timestamp;
   console.log(data);
@@ -80,8 +85,8 @@ function updateResponseArea(responseData) {
   } else {
     createTable(
       responseData,
-      ["display_id", "_id", "language", "answerText"],
-      ["Answer ID", "Search Key", "Language", "Answer Text", "Delete"]
+      ["_id", "en", "es", "fr"],
+      ["Answer ID", "English", "Spanish", "French", "Delete"]
     );
 
     responseHead.textContent = "Database contents ";

@@ -43,28 +43,45 @@
           </div>
         </div>
 
+        <a target="_blank" href="https://cloud.ibm.com/apidocs/language-translator#identify">
+          WLT Language codes
+        </a>
         <div class="row">
           <div class="col-25">
-            <label
-              >Language Code
-              <a target="_blank" href="https://cloud.ibm.com/apidocs/language-translator#identify">
-                WLT Language codes
-              </a>
-            </label>
-          </div>
-          <div class="col-25">
-            <input type="text" id="language" name="language" placeholder="en" required />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-25">
-            <label>Answer Content: </label>
+            <label>Answer Content for English (en): </label>
           </div>
           <div class="col-25">
             <textarea
               type="text"
-              id="answerText"
+              id="en"
+              placeholder="answerText"
+              autocomplete="off"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label>Answer Content for Spanish (es): </label>
+          </div>
+          <div class="col-25">
+            <textarea
+              type="text"
+              id="es"
+              placeholder="answerText"
+              autocomplete="off"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label>Answer Content for French (fr): </label>
+          </div>
+          <div class="col-25">
+            <textarea
+              type="text"
+              id="fr"
               placeholder="answerText"
               autocomplete="off"
               required
