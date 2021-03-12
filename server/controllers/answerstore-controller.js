@@ -5,23 +5,26 @@ IBMCloudEnv.init("/server/config/mappings.json");
 // initialize Cloudant
 const CloudantSDK = require("@cloudant/cloudant");
 
-const cloudant = new CloudantSDK(IBMCloudEnv.getString("cloudant_url"));
+var cloudant = new CloudantSDK({
+  url: IBMCloudEnv.getString("cloudant_url"),
+  plugins: { iamauth: { iamApiKey: IBMCloudEnv.getString("cloudant_apikey") } },
+});
 
 // create mydb database if it does not already exist
 cloudant.db
-  .create("mydb")
+  .create("answer_store")
   .then((data) => {
-    console.log("mydb database created");
+    console.log("answer_store database created");
   })
   .catch((error) => {
     if (error.error === "file_exists") {
-      console.log("mydb database already exists");
+      console.log("answer_store database already exists");
     } else {
       console.log(error);
-      console.log("Error occurred when creating mydb database", error.error);
+      console.log("Error occurred when creating answer_store database", error.error);
     }
   });
-const mydb = cloudant.db.use("mydb");
+const answerStoreDB = cloudant.db.use("answer_store");
 
 exports.removeAnswer = (req, res, next) => {
   console.log("In route - removeAnswer");
@@ -31,7 +34,7 @@ exports.removeAnswer = (req, res, next) => {
 
   console.log("Deleting document " + id);
   // supply the id and revision to be deleted
-  return mydb
+  return answerStoreDB
     .destroy(id, rev)
     .then((result) => {
       console.log(result);
@@ -49,7 +52,7 @@ exports.removeAnswer = (req, res, next) => {
 // get answers from database
 exports.getAnswers = (req, res, next) => {
   console.log("In route - getAnswers");
-  return mydb
+  return answerStoreDB
     .list({ include_docs: true })
     .then((fetchedAnswers) => {
       let answers = [];
@@ -88,7 +91,7 @@ exports.addAnswer = (req, res, next) => {
     timestamp: req.body.timestamp,
   };
   console.log(answerUnit);
-  return mydb
+  return answerStoreDB
     .insert(answerUnit)
     .then((addedAnswer) => {
       console.log("Add answer successful");

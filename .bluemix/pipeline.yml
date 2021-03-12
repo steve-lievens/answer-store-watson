@@ -37,6 +37,8 @@ stages:
         script: |
           #!/bin/bash
 
+          echo ${CLOUDANT_URL}
+
           # Push app
           if ! cf app $CF_APP; then  
             cf push $CF_APP --no-start
@@ -63,6 +65,7 @@ stages:
               cf create-service-key "${SERVICE}" answerstore-key
               cf service-key "${SERVICE}" answerstore-key | tail -n 12 > cloudant.json
               export CLOUDANT_URL=$(jq --raw-output '.url' cloudant.json)
+              export CLOUDANT_APIKEY=$(jq --raw-output '.apikey' cloudant.json)
               cf bind-service ${CF_APP} "${SERVICE}"
           else
               cf create-service cloudantNoSQLDB lite cloudant-for-answerstore
@@ -70,7 +73,7 @@ stages:
               cf create-service-key cloudant-for-answerstore answerstore-key
               cf service-key cloudant-for-answerstore answerstore-key | tail -n 12 > cloudant.json
               export CLOUDANT_URL=$(jq --raw-output '.url' cloudant.json)
-              export CLOUDANT_CREDS=$(jq ". + {database: \"${CLOUDANT_DATABASE}\"}" cloudant.json)
+              export CLOUDANT_APIKEY=$(jq --raw-output '.apikey' cloudant.json)
               cf bind-service $CF_APP cloudant-for-answerstore
           fi
 

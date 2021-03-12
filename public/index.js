@@ -33,7 +33,9 @@ function getAnswers() {
   http.onreadystatechange = function () {
     if (http.readyState === XMLHttpRequest.DONE && http.status === 200) {
       responseData = JSON.parse(http.responseText);
-      responseData.sort((a, b) => a.timestamp.localeCompare(b.timestamp));
+      responseData.sort((a, b) => {
+        if (a.timestamp) a.timestamp.localeCompare(b.timestamp);
+      });
       updateResponseArea(responseData);
     } else if (http.readyState === XMLHttpRequest.DONE) {
       alert("An error occurred when getting answers from the database.");

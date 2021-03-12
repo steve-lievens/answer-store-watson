@@ -57,7 +57,7 @@ function main(params) {
     var searchKey = params.payload.output.generic[0].text + ":" + languageCode;
     return new Promise(function (resolve, reject) {
       cloudant
-        .use("mydb")
+        .use("answer_store")
         .get(searchKey)
         .then((answerUnit) => {
           if (answerUnit) {
