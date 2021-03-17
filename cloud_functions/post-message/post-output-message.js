@@ -34,16 +34,23 @@
   *
   */
 let rp = require("request-promise");
+let _ = require("lodash");
+
 function main(params) {
   console.log("Input Params from pre-webhook");
   console.log(JSON.stringify(params));
 
   const CloudantSDK = require("@cloudant/cloudant");
-  const cloudant = new CloudantSDK("<CLOUDANT_URL>");
+
+  const cloudant = new CloudantSDK({
+    url: "<CLOUDANT_URL>",
+    plugins: { iamauth: { iamApiKey: "<CLOUDANT_APIKEY>" } },
+  });
+
   var defaultDialogLanguageCode = "en";
+  const databaseName = "mydb";
 
   //We are going to check first in the AnswerStore DB if the text is there, otherwise we can translate it
-
   if (
     params.payload.output.generic[0].text !== "" &&
     params.payload.context.skills["main skill"].user_defined &&
@@ -54,16 +61,24 @@ function main(params) {
     var languageCode =
       params.payload.context.skills["main skill"].user_defined.language ||
       defaultDialogLanguageCode; //language code from the WLT identify OR by default "en" English language code to search for
-    var searchKey = params.payload.output.generic[0].text + ":" + languageCode;
+    var searchKey = params.payload.output.debug.output_generic_mapping[0].source.step;
     return new Promise(function (resolve, reject) {
       cloudant
-        .use("answer_store")
+        .use(databaseName)
         .get(searchKey)
         .then((answerUnit) => {
           if (answerUnit) {
             console.log("Returning the answer from the DB using the search key: " + searchKey);
             console.log(answerUnit.answerText);
-            params.payload.output.generic[0].text = answerUnit.answerText;
+            if (languageCode == "es") {
+              params.payload.output.generic[0].text = answerUnit.es;
+            } else if (languageCode == "fr") {
+              params.payload.output.generic[0].text = answerUnit.fr;
+            } else {
+              //default to "en"
+              params.payload.output.generic[0].text = answerUnit.en;
+            }
+
             const response = {
               body: params,
             };

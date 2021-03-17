@@ -17,5 +17,8 @@
       "env:CLOUDANT_APIKEY",
       "file:/server/localdev-config.json:$.apikey"
     ]
+  },
+  "database_name": {
+    "searchPatterns": ["env:database_name", "env:DATABASE_NAME"]
   }
 }

@@ -10,20 +10,20 @@ var cloudant = new CloudantSDK({
   plugins: { iamauth: { iamApiKey: IBMCloudEnv.getString("cloudant_apikey") } },
 });
 
-const databaseName = "answer_store";
+const databaseName = "mydb";
 
 // create mydb database if it does not already exist
 cloudant.db
   .create(databaseName)
   .then((data) => {
-    console.log("answer_store database created");
+    console.log(databaseName + " database created");
   })
   .catch((error) => {
     if (error.error === "file_exists") {
-      console.log("answer_store database already exists");
+      console.log(databaseName + " database already exists");
     } else {
       console.log(error);
-      console.log("Error occurred when creating answer_store database", error.error);
+      console.log("Error occurred when creating" + databaseName + " database", error.error);
     }
   });
 const answerStoreDB = cloudant.db.use(databaseName);

@@ -8,6 +8,7 @@
  *
  */
 let rp = require("request-promise");
+let _ = require("lodash");
 
 function main(params) {
   if (params.payload.input.text !== "") {
@@ -26,10 +27,13 @@ function main(params) {
       json: true,
     };
     return rp(options).then((res) => {
-      params.payload.context.skills["main skill"].user_defined["language"] =
-        res.languages[0].language;
-
       var defaultDialogLanguageCode = "en";
+
+      const confidence = _.get(res, "languages[0].confidence");
+      console.log("confidence " + confidence);
+      const language =
+        confidence > 0.5 ? _.get(res, "languages[0].language") : defaultDialogLanguageCode;
+      _.set(params, 'payload.context.skills["main skill"].user_defined["language"]', language);
 
       if (res.languages[0].language !== defaultDialogLanguageCode) {
         const options = {
@@ -52,24 +56,24 @@ function main(params) {
             params.payload.input.text;
           params.payload.input.text = res.translations[0].translation;
           console.log(JSON.stringify(params));
-          const result = {
-            body: params,
-          };
-          return result;
+          // const result = {
+          //   body: params,
+          // };
+          return { params };
         });
       } else {
         console.log(JSON.stringify(params));
-        const result = {
-          body: params,
-        };
-        return result;
+        // const result = {
+        //   body: params,
+        // };
+        return { params };
       }
     });
   } else {
     params.payload.context.skills["main skill"].user_defined["language"] = "none";
-    const result = {
-      body: params,
-    };
-    return result;
+    // const result = {
+    //   body: params,
+    // };
+    return { params };
   }
 }
