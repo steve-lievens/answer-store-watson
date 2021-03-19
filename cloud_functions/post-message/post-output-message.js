@@ -61,7 +61,8 @@ function main(params) {
     var languageCode =
       params.payload.context.skills["main skill"].user_defined.language ||
       defaultDialogLanguageCode; //language code from the WLT identify OR by default "en" English language code to search for
-    var searchKey = params.payload.output.debug.output_generic_mapping[0].source.step;
+    var searchKey = params.payload.output.debug.nodes_visited[0].dialog_node;
+    console.log("searchkey " + searchKey);
     return new Promise(function (resolve, reject) {
       cloudant
         .use(databaseName)
