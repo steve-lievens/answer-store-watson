@@ -64,7 +64,7 @@ exports.getAnswers = (req, res, next) => {
         answers[row] = {
           _id: fetchedName.id,
           en: fetchedName.doc.en,
-          es: fetchedName.doc.es,
+          nl: fetchedName.doc.nl,
           fr: fetchedName.doc.fr,
           timestamp: fetchedName.doc.timestamp,
           rev: fetchedName.doc._rev,
@@ -90,7 +90,7 @@ exports.addAnswer = (req, res, next) => {
   let answerUnit = {
     _id: req.body.id,
     en: req.body.en,
-    es: req.body.es,
+    nl: req.body.nl,
     fr: req.body.fr,
     timestamp: req.body.timestamp,
   };
@@ -102,7 +102,7 @@ exports.addAnswer = (req, res, next) => {
       return res.status(201).json({
         _id: addedAnswer.id,
         en: addedAnswer.en,
-        es: addedAnswer.es,
+        nl: addedAnswer.nl,
         fr: addedAnswer.fr,
         timestamp: addedAnswer.timestamp,
       });

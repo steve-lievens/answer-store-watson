@@ -8,19 +8,19 @@ function captureSubmit(event) {
   // log.textContent = `Form Submitted! Time stamp: ${event.timeStamp}`;
   let answerID = document.getElementById("answerID").value;
   let en = document.getElementById("en").value;
-  let es = document.getElementById("es").value;
+  let nl = document.getElementById("nl").value;
   let fr = document.getElementById("fr").value;
 
   let answerContent = {
     id: sanitize(answerID),
     en: sanitize(en),
     fr: sanitize(fr),
-    es: sanitize(es),
+    nl: sanitize(nl),
   };
   // clear Form values
   document.getElementById("answerID").value = "";
   document.getElementById("en").value = "";
-  document.getElementById("es").value = "";
+  document.getElementById("nl").value = "";
   document.getElementById("fr").value = "";
   addAnswer(answerContent);
   event.preventDefault();
@@ -57,8 +57,8 @@ function addAnswer(answer) {
     answer.id +
     "&en=" +
     answer.en +
-    "&es=" +
-    answer.es +
+    "&nl=" +
+    answer.nl +
     "&fr=" +
     answer.fr +
     "&timestamp=" +
@@ -85,8 +85,8 @@ function updateResponseArea(responseData) {
   } else {
     createTable(
       responseData,
-      ["_id", "en", "es", "fr"],
-      ["Answer ID", "English", "Spanish", "French", "Delete"]
+      ["_id", "en", "nl", "fr"],
+      ["Answer ID", "English", "Dutch", "French", "Delete"]
     );
 
     responseHead.textContent = "Database contents ";

@@ -36,8 +36,8 @@ router.post(
       .trim()
       .escape(),
     body("en").trim().isLength({ min: 1 }).withMessage("en empty.").not().isEmpty().trim().escape(),
-    body("es").trim().isLength({ min: 1 }).withMessage("es empty.").not().isEmpty().trim().escape(),
-    body("fr").trim().isLength({ min: 1 }).withMessage("es empty.").not().isEmpty().trim().escape(),
+    body("nl").trim().isLength({ min: 1 }).withMessage("nl empty.").not().isEmpty().trim().escape(),
+    body("fr").trim().isLength({ min: 1 }).withMessage("fr empty.").not().isEmpty().trim().escape(),
 
     body("timestamp").isISO8601(),
   ]),

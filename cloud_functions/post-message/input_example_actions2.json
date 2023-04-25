@@ -1,0 +1,192 @@
+{
+  "event": { "name": "message_processed" },
+  "options": {},
+  "payload": {
+    "output": {
+      "debug": {
+        "turn_events": [
+          {
+            "event": "action_visited",
+            "source": {
+              "type": "action",
+              "action": "action_18173",
+              "action_title": "Mortgage calculator"
+            },
+            "action_start_time": "2023-04-25T12:46:19.392416Z",
+            "condition_type": "user_defined",
+            "reason": "intent"
+          },
+          {
+            "event": "step_visited",
+            "source": {
+              "type": "step",
+              "step": "step_129",
+              "action": "action_18173",
+              "action_title": "Mortgage calculator"
+            },
+            "action_start_time": "2023-04-25T12:46:19.392416Z",
+            "first_step": true
+          },
+          {
+            "event": "step_visited",
+            "source": {
+              "type": "step",
+              "step": "step_872",
+              "action": "action_18173",
+              "action_title": "Mortgage calculator"
+            },
+            "action_start_time": "2023-04-25T12:46:19.392416Z",
+            "has_question": true
+          }
+        ],
+        "output_generic_mapping": [
+          { "source": { "type": "step", "step": "step_129", "action": "action_18173" } },
+          { "source": { "type": "step", "step": "step_872", "action": "action_18173" } }
+        ],
+        "log_messages": []
+      },
+      "intents": [{ "intent": "action_18173_intent_22211", "confidence": 0.8583773374557495 }],
+      "entities": [],
+      "generic": [
+        {
+          "response_type": "text",
+          "user_defined": { "type": "mc_first_step", "user_defined_type": "mc_first_step" },
+          "text": "WAML-MC-TEXT01"
+        },
+        { "response_type": "text", "text": "WAML-MC-TEXT02" }
+      ],
+      "alternate_responses": [
+        {
+          "response_type": "suggestion",
+          "title": "You might want to try...",
+          "suggestions": [
+            {
+              "label": "Mortgage refinancing",
+              "value": {
+                "input": {
+                  "suggestion_id": "a:396b137e-efd5-495b-8d38-7683687daefa",
+                  "text": "mortgage calculation",
+                  "options": { "restart": true },
+                  "intents": [{ "intent": "action_3587_intent_18588", "confidence": 1 }],
+                  "entities": []
+                }
+              },
+              "output": {},
+              "dialog_node": "action_3587"
+            },
+            {
+              "label": "Do you do e-statements by default?",
+              "value": {
+                "input": {
+                  "suggestion_id": "a:0df66603-bfec-40bc-92e1-eb5ffb2da6f0",
+                  "text": "mortgage calculation",
+                  "options": { "restart": true },
+                  "intents": [{ "intent": "action_43037_intent_14623", "confidence": 1 }],
+                  "entities": []
+                }
+              },
+              "output": {},
+              "dialog_node": "action_43037"
+            },
+            {
+              "label": "How do I figure out my loan amount?",
+              "value": {
+                "input": {
+                  "suggestion_id": "a:744e9ef3-8b91-42f6-9905-0b5e87489b2b",
+                  "text": "mortgage calculation",
+                  "options": { "restart": true },
+                  "intents": [{ "intent": "action_2100_intent_21486", "confidence": 1 }],
+                  "entities": []
+                }
+              },
+              "output": {},
+              "dialog_node": "action_2100"
+            },
+            {
+              "label": "Checking account promotions in table",
+              "value": {
+                "input": {
+                  "suggestion_id": "a:6916756e-2bc0-4dc4-8141-8525c9eb16f7",
+                  "text": "mortgage calculation",
+                  "options": { "restart": true },
+                  "intents": [{ "intent": "action_35382_intent_27056-2-3", "confidence": 1 }],
+                  "entities": []
+                }
+              },
+              "output": {},
+              "dialog_node": "action_35382-2-3"
+            },
+            {
+              "label": "Account specific promotions",
+              "value": {
+                "input": {
+                  "suggestion_id": "a:6ebdfb21-2298-46ca-ab22-a8a385582bae",
+                  "text": "mortgage calculation",
+                  "options": { "restart": true },
+                  "intents": [{ "intent": "action_35382_intent_27056-2-2", "confidence": 1 }],
+                  "entities": []
+                }
+              },
+              "output": {},
+              "dialog_node": "action_35382-2-2"
+            }
+          ]
+        }
+      ]
+    },
+    "user_id": "anonymous_IBMuid-5f634ded-661a-42ea-a607-558fde17a56d",
+    "context": {
+      "global": {
+        "system": {
+          "session_start_time": "2023-04-25T12:46:17.896Z",
+          "user_id": "anonymous_IBMuid-5f634ded-661a-42ea-a607-558fde17a56d",
+          "timezone": "Europe/Brussels",
+          "turn_count": 1,
+          "state": "eyJpZCI6IjM2ZTFhNGFjLWY0MTYtNDQ4ZC05OWU0LTdiMmNmNTc2NzcyYiIsIm5hbWUiOiJkcmFmdCIsInNraWxscyI6W3siY29uZmlnIjp7Im1lc3NhZ2UiOm51bGwsInZlcnNpb24iOiIyMDE4LTEyLTAzIiwiaGlnaGxpZ2h0IjpudWxsLCJpbnN0YW5jZV9pZCI6bnVsbCwiY29sbGVjdGlvbl9pZCI6bnVsbCwiZGlzY292ZXJ5X3VybCI6bnVsbCwiZXJyb3JfbWVzc2FnZSI6bnVsbCwiZW52aXJvbm1lbnRfaWQiOm51bGwsInJlc3VsdHNfcGVyX3BhZ2UiOm51bGwsIm1heF90b3RhbF9yZXN1bHRzIjpudWxsLCJub19yZXN1bHRfbWVzc2FnZSI6bnVsbCwicGFnaW5hdGlvbl9lbmFibGVkIjpmYWxzZSwic2NoZW1hX21hcHBpbmdfdXJsIjpudWxsLCJtYXhfcHJpbWFyeV9yZXN1bHRzIjpudWxsLCJzY2hlbWFfbWFwcGluZ19ib2R5IjpudWxsLCJiYXNpY19hdXRoZW50aWNhdGlvbiI6bnVsbCwic2NoZW1hX21hcHBpbmdfdGl0bGUiOm51bGx9LCJkaXNhYmxlZCI6dHJ1ZSwibGFuZ3VhZ2UiOiJ4eCIsInNraWxsX3R5cGUiOiJzZWFyY2giLCJza2lsbF9yZWZlcmVuY2UiOiJzZWFyY2ggc2tpbGwiLCJza2lsbF9zbmFwc2hvdF9pZCI6bnVsbCwic2tpbGxfc25hcHNob3RfbmFtZSI6bnVsbCwid29ya2VyX2RlZmluaXRpb25faWQiOiIzZGZhYzkwMC0xZTQwLTQ5M2QtYTA0NS1hMjE0NDFhY2I4NWMifSx7ImNvbmZpZyI6eyJhY3Rpb25zIjpmYWxzZSwid29ya3NwYWNlX2lkIjoiN2NlNjA2ZWUtNGM2OS00M2M2LTliMmQtZjkxMjAwMDE0YmI1Iiwic2tpbGxfcmVmZXJlbmNlX2lkIjpudWxsfSwiZGlzYWJsZWQiOnRydWUsImxhbmd1YWdlIjoiZW4iLCJza2lsbF90eXBlIjoiZGlhbG9nIiwic2tpbGxfcmVmZXJlbmNlIjoibWFpbiBza2lsbCIsInNraWxsX3NuYXBzaG90X2lkIjpudWxsLCJza2lsbF9zbmFwc2hvdF9uYW1lIjpudWxsLCJ3b3JrZXJfZGVmaW5pdGlvbl9pZCI6IjdjZTYwNmVlLTRjNjktNDNjNi05YjJkLWY5MTIwMDAxNGJiNSJ9LHsiY29uZmlnIjp7ImFjdGlvbnMiOnRydWUsIndvcmtzcGFjZV9pZCI6ImFmMGJhZmVhLTY1MDctNGUzMy05ZDFlLTdkYWY5ZjI4M2FkZSIsInNraWxsX3JlZmVyZW5jZV9pZCI6bnVsbH0sImRpc2FibGVkIjpmYWxzZSwibGFuZ3VhZ2UiOiJlbiIsInNraWxsX3R5cGUiOiJhY3Rpb24iLCJza2lsbF9yZWZlcmVuY2UiOiJhY3Rpb25zIHNraWxsIiwic2tpbGxfc25hcHNob3RfaWQiOm51bGwsInNraWxsX3NuYXBzaG90X25hbWUiOm51bGwsIndvcmtlcl9kZWZpbml0aW9uX2lkIjoiYWYwYmFmZWEtNjUwNy00ZTMzLTlkMWUtN2RhZjlmMjgzYWRlIn1dLCJsYW5ndWFnZSI6ImVuIiwidGVuYW50X2lkIjoiNmVmOGJhMmQtOTk3ZC00NjZjLTljZDctOWYwNGJhMjIxNmY2IiwiZW52aXJvbm1lbnQiOiJkcmFmdCIsImRlZmF1bHRfaW5zdGFuY2UiOnRydWUsImRpc2FibGVfZmFsbGJhY2siOnRydWUsImFnZW50X2RlZmluaXRpb25faWQiOiIzNmUxYTRhYy1mNDE2LTQ0OGQtOTllNC03YjJjZjU3Njc3MmIiLCJwYXJlbnRfYXNzaXN0YW50X2lkIjoiNDg2Zjg4YTctZTg4MC00YmZkLWEyYWUtMGY0ZWRmOWFlZjhmIn0="
+        },
+        "session_id": "770a2f5f-d909-4107-8e65-f843bd77625a"
+      },
+      "integrations": {
+        "chat": {
+          "browser_info": {
+            "browser_name": "safari",
+            "browser_version": "16.4.0",
+            "browser_OS": "Mac OS",
+            "language": "en-US",
+            "page_url": "https://eu-de.assistant.watson.cloud.ibm.com/crn%3Av1%3Abluemix%3Apublic%3Aconversation%3Aeu-de%3Aa%2F980d7ef5b1896b370242457b5e4e72cd%3A6ef8ba2d-997d-466c-9cd7-9f04ba2216f6%3A%3A/assistants/486f88a7-e880-4bfd-a2ae-0f4edf9aef8f/preview",
+            "screen_resolution": "width: 1728, height: 1117",
+            "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15",
+            "client_ip_address": "78.21.155.108",
+            "ip_address_list": ["78.21.155.108", "10.123.140.187", "172.30.152.192"]
+          }
+        },
+        "channel": {
+          "name": "Web chat",
+          "private": { "user": { "id": "anonymous_IBMuid-5f634ded-661a-42ea-a607-558fde17a56d" } }
+        }
+      },
+      "skills": {
+        "actions skill": {
+          "action_variables": { "step_129": true },
+          "skill_variables": {
+            "credit_card": "808",
+            "credit_score": 750,
+            "discovery_date_version": "2022-08-01",
+            "discovery_instance_id": "9c258e35-c6b4-4e0c-9661-454c090df5eb",
+            "discovery_project_id": "21df084a-d2dd-4889-8d82-59871c600006",
+            "jokes_told": 0,
+            "table_results_enabled": false,
+            "user_defined_responses_enabled": false
+          },
+          "system": {
+            "state": "eyJzZXNzaW9uX3N0YXJ0X3RpbWUiOiIyMDIzLTA0LTI1VDEyOjQ2OjE3Ljg5NloiLCJzZXNzaW9uX2lkIjoiNzcwYTJmNWYtZDkwOS00MTA3LThlNjUtZjg0M2JkNzc2MjVhIiwic2tpbGxfcmVmZXJlbmNlIjoiYWN0aW9ucyBza2lsbCIsImFzc2lzdGFudF9pZCI6IjM2ZTFhNGFjLWY0MTYtNDQ4ZC05OWU0LTdiMmNmNTc2NzcyYiIsInNoYWRvd192YXJpYWJsZXMiOnt9LCJyZXN0YXJ0X2RvbmVfZm9yX3R1cm4iOjEsImRpZ3Jlc3NlZF9mcm9tIjpudWxsLCJzdWdnZXN0aW9ucyI6eyJtZXRhZGF0YSI6e30sInN1Z2dlc3Rpb25zIjpbeyJzdWdnZXN0aW9uX2lkIjoiZDo4MDQ1NjAzOS03NmNjLTQ2YmQtYTI1Zi02NTQ1ZTg4Y2Q3MDciLCJwb3NpdGlvbiI6MCwib3JpZ2luIjoiZGlzYW1iaWd1YXRpb24ifSx7InN1Z2dlc3Rpb25faWQiOiJhOjY5MTY3NTZlLTJiYzAtNGRjNC04MTQxLTg1MjVjOWViMTZmNyIsInBvc2l0aW9uIjozLCJvcmlnaW4iOiJhbHRlcm5hdGVfcmVzcG9uc2VzIn0seyJzdWdnZXN0aW9uX2lkIjoiYTo3NDRlOWVmMy04YjkxLTQyZjYtOTkwNS0wYjVlODc0ODliMmIiLCJwb3NpdGlvbiI6Miwib3JpZ2luIjoiYWx0ZXJuYXRlX3Jlc3BvbnNlcyJ9LHsic3VnZ2VzdGlvbl9pZCI6ImE6NmViZGZiMjEtMjI5OC00NmNhLWFiMjItYThhMzg1NTgyYmFlIiwicG9zaXRpb24iOjQsIm9yaWdpbiI6ImFsdGVybmF0ZV9yZXNwb25zZXMifSx7InN1Z2dlc3Rpb25faWQiOiJhOjM5NmIxMzdlLWVmZDUtNDk1Yi04ZDM4LTc2ODM2ODdkYWVmYSIsInBvc2l0aW9uIjowLCJvcmlnaW4iOiJhbHRlcm5hdGVfcmVzcG9uc2VzIn0seyJzdWdnZXN0aW9uX2lkIjoiYTowZGY2NjYwMy1iZmVjLTQwYmMtOTJlMS1lYjVmZmIyZGE2ZjAiLCJwb3NpdGlvbiI6MSwib3JpZ2luIjoiYWx0ZXJuYXRlX3Jlc3BvbnNlcyJ9XX0sImxhc3RfZGlzYW1iaWd1YXRpb25fZXZlbnRfaWQiOiI1OTFhZDMyYS03MjUyLTQwYmUtYmZhYi0wZGZhOTk3OWNkYTciLCJsYXN0X2FsdGVybmF0ZV9yZXNwb25zZXNfZXZlbnRfaWQiOiI4NWRjZTExYy1kNjc2LTQwOTAtODllMS0zODQ1NzhlZWE3NDYiLCJub19hY3Rpb25fbWF0Y2hlc19jb3VudCI6MCwiX25vZGVfb3V0cHV0X21hcCI6eyJhY3Rpb25fMTgxNzMgc3RlcF8xMjkiOnsiMCI6WzBdfSwiYWN0aW9uXzE4MTczIHN0ZXBfODcyIjp7IjAiOlswXX19LCJhY3Rpb25fc3RhY2siOlt7ImFjdGlvbiI6ImFjdGlvbl8xODE3MyIsImFjdGlvbl9zdGFydF90aW1lIjoiMjAyMy0wNC0yNVQxMjo0NjoxOS4zOTI0MTZaIiwiY3VycmVudF9zdGVwIjoic3RlcF84NzIiLCJ0cmllc19lbGFwc2VkIjp7InN0ZXBfODcyIjoxfX1dfQ=="
+          }
+        },
+        "main skill": {
+          "system": {},
+          "user_defined": { "language": "nl", "original_input": "berekening hypotheek" }
+        }
+      }
+    }
+  }
+}

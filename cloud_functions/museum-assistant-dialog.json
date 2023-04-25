@@ -1,0 +1,2164 @@
+{
+  "intents": [
+    {
+      "intent": "bepalen-formaat",
+      "examples": [
+        {
+          "text": "Hoe groot?"
+        },
+        {
+          "text": "Hoe groot is het?"
+        },
+        {
+          "text": "Hoe groot is het kunstwerk?"
+        },
+        {
+          "text": "Hoe groot is het schilderij?"
+        },
+        {
+          "text": "Kunt u mij het formaat vertellen?"
+        },
+        {
+          "text": "Wat is het formaat?"
+        },
+        {
+          "text": "Wat is het formaat van dit kunstwerk?"
+        },
+        {
+          "text": "Wat is het formaat van dit schilderij?"
+        },
+        {
+          "text": "Wat zijn de afmetingen?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "bepalen-kunstenaar",
+      "examples": [
+        {
+          "text": "Door wie is dit gemaakt"
+        },
+        {
+          "text": "Door wie is dit gemaakt?"
+        },
+        {
+          "text": "Hoe heet de schilder van dit kunstwerk?"
+        },
+        {
+          "text": "wat is de artist?"
+        },
+        {
+          "text": "Wat is de naam van de schilder?"
+        },
+        {
+          "text": "Welke naam zit achter dit schilderij?"
+        },
+        {
+          "text": "Welke naam zit hierachter?"
+        },
+        {
+          "text": "Wie heeft de nachtwacht gemaakt?"
+        },
+        {
+          "text": "Wie heeft dit gemaakt?"
+        },
+        {
+          "text": "Wie heeft dit kunstwerk gemaakt?"
+        },
+        {
+          "text": "Wie heeft dit object gemaakt?"
+        },
+        {
+          "text": "Wie heeft dit schilderij gemaakt?"
+        },
+        {
+          "text": "Wie heeft het gemaakt?"
+        },
+        {
+          "text": "Wie is de kunstenaar?"
+        },
+        {
+          "text": "Wie is de maker?"
+        },
+        {
+          "text": "Wie zit er achter dit object?"
+        },
+        {
+          "text": "Wie zit er achter dit schilderij?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "bepalen-leeftijd",
+      "examples": [
+        {
+          "text": "Hoe lang geleden is het schilderij gemaakt?"
+        },
+        {
+          "text": "Hoe oud is de Mona Lisa?"
+        },
+        {
+          "text": "Hoe oud is dit object?"
+        },
+        {
+          "text": "Hoe oud is het?"
+        },
+        {
+          "text": "Hoe oud is het kunstwerk?"
+        },
+        {
+          "text": "Hoe oud is het melkmeisje?"
+        },
+        {
+          "text": "Hoe oud is het schilderij?"
+        },
+        {
+          "text": "Is het schilderij oud?"
+        },
+        {
+          "text": "Uit welk jaar komt de laatste avondmaal?"
+        },
+        {
+          "text": "Uit welk jaar komt de Mona Lisa?"
+        },
+        {
+          "text": "Uit welk jaar komt het schilderij?"
+        },
+        {
+          "text": "Wanneer is dit schilderij gemaakt?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "bepalen-locatie",
+      "examples": [
+        {
+          "text": "Waar hangt de Mona Lisa?"
+        },
+        {
+          "text": "Waar hangt dit kunstwerk?"
+        },
+        {
+          "text": "Waar hangt dit object?"
+        },
+        {
+          "text": "Waar hangt dit schilderij?"
+        },
+        {
+          "text": "Waar hangt het?"
+        },
+        {
+          "text": "Waar is het te bewonderen?"
+        },
+        {
+          "text": "Waar is het te zien?"
+        },
+        {
+          "text": "Waar kan ik dit kunstwerken vinden?"
+        },
+        {
+          "text": "Waar kan ik dit kunstwerk zien?"
+        },
+        {
+          "text": "Waar kan ik dit object vinden?"
+        },
+        {
+          "text": "Waar kan ik dit object zien?"
+        },
+        {
+          "text": "Waar kan ik dit schilderij vinden?"
+        },
+        {
+          "text": "Waar kan ik dit schilderij zien?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "bepalen-omschrijving",
+      "examples": [
+        {
+          "text": "Kan je een omschrijving geven van dit schilderij?"
+        },
+        {
+          "text": "Omschrijven ajb"
+        },
+        {
+          "text": "Omschrijving alstublieft"
+        },
+        {
+          "text": "vertel eens iets meer"
+        },
+        {
+          "text": "vertel eens iets meer over de avondschool"
+        },
+        {
+          "text": "Waar gaat het schilderij over?"
+        },
+        {
+          "text": "waarom heet het het toilet"
+        },
+        {
+          "text": "Wat is er te zien op dit kunstwerk?"
+        },
+        {
+          "text": "Wat is er te zien op dit schilderij?"
+        },
+        {
+          "text": "Wat is te zien op het kunstwerk?"
+        },
+        {
+          "text": "Wat is te zien op het schilderij?"
+        },
+        {
+          "text": "Wat laat de schilder zien op dit schilderij?"
+        },
+        {
+          "text": "Wat wordt er afgebeeld?"
+        },
+        {
+          "text": "Wat wordt er afgebeeld op dit schilderij?"
+        },
+        {
+          "text": "Wat zie ik?"
+        },
+        {
+          "text": "Wat zie ik op dit schilderij?"
+        },
+        {
+          "text": "Wat zien we?"
+        },
+        {
+          "text": "Wat zien we op dit schilderij?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "bepalen-waarde",
+      "examples": [
+        {
+          "text": "dit zal niet weinig gekost hebben dan"
+        },
+        {
+          "text": "Hoe duur is dit kunstwerk?"
+        },
+        {
+          "text": "Hoe duur is dit schilderij?"
+        },
+        {
+          "text": "Hoeveel betaal ik voor dit kunstwerk?"
+        },
+        {
+          "text": "Hoeveel betaal ik voor dit object?"
+        },
+        {
+          "text": "Hoeveel kost dit kunstwerk?"
+        },
+        {
+          "text": "Hoeveel kost dit object?"
+        },
+        {
+          "text": "Hoeveel kost dit schilderij?"
+        },
+        {
+          "text": "Wat is de waarde van dit kunstwerk?"
+        },
+        {
+          "text": "Wat is de waarde van dit object?"
+        },
+        {
+          "text": "Wat is de waarde van dit schilderij?"
+        },
+        {
+          "text": "wat kost het"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "bevestigen",
+      "examples": [
+        {
+          "text": "Graag"
+        },
+        {
+          "text": "Ja"
+        },
+        {
+          "text": "Ja graag"
+        },
+        {
+          "text": "Jazeker"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ontkennen",
+      "examples": [
+        {
+          "text": "Nee"
+        },
+        {
+          "text": "Nee bedankt"
+        },
+        {
+          "text": "Nee hoor"
+        },
+        {
+          "text": "nope"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "reset",
+      "examples": [
+        {
+          "text": "clear"
+        },
+        {
+          "text": "een ander schilderij"
+        },
+        {
+          "text": "het is wel mooi geweest"
+        },
+        {
+          "text": "ik kap er mee"
+        },
+        {
+          "text": "ik wil graag stoppen"
+        },
+        {
+          "text": "ik wil opnieuw beginnen"
+        },
+        {
+          "text": "Laten we naar een ander kunstwerk kijken"
+        },
+        {
+          "text": "opnieuw"
+        },
+        {
+          "text": "opniew"
+        },
+        {
+          "text": "refresh"
+        },
+        {
+          "text": "reset"
+        },
+        {
+          "text": "stop"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "zoeken-in-discovery",
+      "examples": [
+        {
+          "text": "eros versus donatos"
+        },
+        {
+          "text": "hoe rijk was deze familie"
+        },
+        {
+          "text": "Hoort de sok rood gekleurd te zijn?"
+        },
+        {
+          "text": "is er nog meer informatie?"
+        },
+        {
+          "text": "is het winter"
+        },
+        {
+          "text": "is ze ooit getrouwd?"
+        },
+        {
+          "text": "kunt u iets vertellen over het licht?"
+        },
+        {
+          "text": "mooi thema, wie is het kind?"
+        },
+        {
+          "text": "waar komt het schilderij vandaan"
+        },
+        {
+          "text": "waarom gaan kinderen 's avonds naar school"
+        },
+        {
+          "text": "waarom is de sok rood"
+        },
+        {
+          "text": "waarom is dit schilderij zo bekend"
+        },
+        {
+          "text": "Was de po iets uit die tijd"
+        },
+        {
+          "text": "Wat heeft ze in haar hand?"
+        },
+        {
+          "text": "wat is er nog meer over deze vrouw te vertellen?"
+        },
+        {
+          "text": "Wat is typisch aan haar kleding?"
+        },
+        {
+          "text": "wat staat er precies op het kussen"
+        },
+        {
+          "text": "wat voor licht is dit?"
+        },
+        {
+          "text": "Wat zijn de typische vrouwelijke elementen"
+        },
+        {
+          "text": "wat zijn de vrouwelijke elementen"
+        },
+        {
+          "text": "Welke andere schilderijen heeft deze schilder gemaakt?"
+        },
+        {
+          "text": "Weten wij hoe de hond heet?"
+        },
+        {
+          "text": "wie is de vader van dit kind"
+        },
+        {
+          "text": "Wie was Maria Trip?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "schilderij",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "De avondschool",
+          "synonyms": [
+            "avond school",
+            "avondschool"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Het toilet",
+          "synonyms": [
+            "toilet"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Portret van een vrouw, waarschijnlijk Maria Trip",
+          "synonyms": [
+            "Maria Trip",
+            "Portret van een vrouw"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Schreeuwend kind",
+          "synonyms": [
+            "Schreeuwend kind"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Stilleven met vergulde bokaal",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": []
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "sys-percentage",
+      "values": []
+    },
+    {
+      "entity": "sys-time",
+      "values": []
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1645697047869",
+      "context": {
+        "schilderij": "@schilderij"
+      },
+      "conditions": "@schilderij",
+      "event_name": "input",
+      "dialog_node": "handler_10_1645697047884"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_1_1645697047869",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1645697047884",
+      "previous_sibling": "handler_10_1645697047884"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "Welkom",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1645629513225",
+      "previous_sibling": "response_8_1647018900473"
+    },
+    {
+      "type": "standard",
+      "title": "In andere gevallen",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ik heb het niet begrepen. U kunt proberen het anders te formuleren."
+              },
+              {
+                "text": "Kunt u het anders formuleren? Ik begrijp het niet."
+              },
+              {
+                "text": "Ik begrijp niet wat u bedoelt."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "In andere gevallen",
+      "previous_sibling": "node_6_1646038289538",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Bepalen formaat",
+      "output": {},
+      "parent": "node_3_1647263792736",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1645629256839"
+      },
+      "conditions": "#bepalen-formaat",
+      "dialog_node": "node_1_1646382304340",
+      "previous_sibling": "node_12_1646383987746"
+    },
+    {
+      "type": "standard",
+      "title": "Bepalen locatie",
+      "output": {},
+      "parent": "node_3_1647263792736",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1645629256839"
+      },
+      "conditions": "#bepalen-locatie",
+      "dialog_node": "node_1_1647023855377",
+      "previous_sibling": "node_1_1646382304340"
+    },
+    {
+      "type": "standard",
+      "title": "Opnieuw starten assistant",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Klopt het dat je opnieuw wilt beginnen?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Bevestiging:",
+            "options": [
+              {
+                "label": "Ja",
+                "value": {
+                  "input": {
+                    "text": "Ja"
+                  }
+                }
+              },
+              {
+                "label": "Nee",
+                "value": {
+                  "input": {
+                    "text": "Nee"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#reset",
+      "dialog_node": "node_1_1647076859092",
+      "previous_sibling": "node_9_1645629256839"
+    },
+    {
+      "type": "standard",
+      "title": "Bepalen omschrijving",
+      "output": {},
+      "parent": "node_3_1647263792736",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1645629256839"
+      },
+      "conditions": "#bepalen-omschrijving",
+      "dialog_node": "node_12_1646383987746",
+      "previous_sibling": "node_7_1645630279339"
+    },
+    {
+      "type": "standard",
+      "title": "Nee",
+      "parent": "node_9_1645629256839",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1646038289538"
+      },
+      "conditions": "#ontkennen",
+      "dialog_node": "node_2_1646038327103",
+      "previous_sibling": "node_3_1646038576092"
+    },
+    {
+      "type": "standard",
+      "title": "Opnieuw beginnen",
+      "parent": "node_9_1645629256839",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1647076859092"
+      },
+      "conditions": "#reset",
+      "dialog_node": "node_2_1647257853806",
+      "previous_sibling": "node_2_1646038327103",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "Bepalen schilderij",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@schilderij",
+      "dialog_node": "node_3_1645613089856",
+      "previous_sibling": "node_5_1645705940680"
+    },
+    {
+      "type": "standard",
+      "title": "Bepalen kunstenaar",
+      "parent": "node_3_1647263792736",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1645629256839"
+      },
+      "conditions": "#bepalen-kunstenaar",
+      "dialog_node": "node_3_1645708716071",
+      "previous_sibling": "node_7_1647025392911"
+    },
+    {
+      "type": "standard",
+      "title": "Ja",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Wat wilt u nog meer weten over dit schilderij?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1645629256839",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_7_1645630279339"
+      },
+      "conditions": "#bevestigen",
+      "dialog_node": "node_3_1646038576092"
+    },
+    {
+      "type": "folder",
+      "title": "Beantwoord alleen wanneer > 80% zeker",
+      "parent": "node_3_1645613089856",
+      "conditions": "intents[0].confidence > 0.8",
+      "dialog_node": "node_3_1647263792736",
+      "previous_sibling": "node_6_1647022693543"
+    },
+    {
+      "type": "standard",
+      "title": "Zoeken in Discovery",
+      "output": {
+        "generic": [
+          {
+            "query": "",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_3_1645613089856",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1645629256839"
+      },
+      "conditions": "true",
+      "dialog_node": "node_4_1647075066328",
+      "previous_sibling": "node_3_1647263792736",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Introduceren schilderijen",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Over welk kunstwerk zou je graag wat meer willen weten?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Schilderijen:",
+            "options": [
+              {
+                "label": "Schreeuwend kind",
+                "value": {
+                  "input": {
+                    "text": "Schreeuwend kind"
+                  }
+                }
+              },
+              {
+                "label": "Het toilet",
+                "value": {
+                  "input": {
+                    "text": "Het toilet"
+                  }
+                }
+              },
+              {
+                "label": "Portret van een vrouw, waarschijnlijk Maria Trip ",
+                "value": {
+                  "input": {
+                    "text": "Portret van een vrouw, waarschijnlijk Maria Trip "
+                  }
+                }
+              },
+              {
+                "label": "Stilleven met vergulde bokaal",
+                "value": {
+                  "input": {
+                    "text": "Stilleven met vergulde bokaal"
+                  }
+                }
+              },
+              {
+                "label": "De avondschool",
+                "value": {
+                  "input": {
+                    "text": "De avondschool"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1645705940680",
+      "previous_sibling": "Welkom"
+    },
+    {
+      "type": "standard",
+      "title": "Ja ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Prima, dan gaan we dat doen!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1647076859092",
+      "context": {
+        "schilderij": null
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Welkom"
+      },
+      "conditions": "#bevestigen",
+      "dialog_node": "node_5_1647076982870"
+    },
+    {
+      "type": "standard",
+      "title": "Afsluiten",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Fijne dag verder!"
+              },
+              {
+                "text": "Wij hopen u snel weer te zien!"
+              },
+              {
+                "text": "Bedankt voor uw bezoek aan ons museum. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "dialog_node": "node_6_1646038289538",
+      "previous_sibling": "node_1_1647076859092",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Veranderen schilderij",
+      "parent": "node_3_1645613089856",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_3_1645613089856"
+      },
+      "conditions": "@schilderij && @schilderij != $schilderij",
+      "dialog_node": "node_6_1647022693543",
+      "previous_sibling": "node_8_1647337701236"
+    },
+    {
+      "type": "standard",
+      "title": "Bepalen leeftijd",
+      "parent": "node_3_1647263792736",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1645629256839"
+      },
+      "conditions": "#bepalen-leeftijd",
+      "dialog_node": "node_7_1645630279339"
+    },
+    {
+      "type": "standard",
+      "title": "Anders",
+      "parent": "node_9_1645629256839",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_6_1647022693543"
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1647020529847",
+      "previous_sibling": "node_2_1647257853806",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Bepalen waarde",
+      "output": {},
+      "parent": "node_3_1647263792736",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1645629256839"
+      },
+      "conditions": "#bepalen-waarde",
+      "dialog_node": "node_7_1647025392911",
+      "previous_sibling": "node_1_1647023855377"
+    },
+    {
+      "type": "standard",
+      "title": "Audiofragment afspelen of niet?",
+      "parent": "node_3_1645613089856",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1645629256839"
+      },
+      "conditions": "#bevestigen || #ontkennen",
+      "dialog_node": "node_8_1647337701236",
+      "previous_sibling": "response_1_1646141443010"
+    },
+    {
+      "type": "standard",
+      "title": "Nog andere vragen?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is er nog iets anders wat je wilt weten over dit kunstwerk?"
+              },
+              {
+                "text": "Heb je nog andere vragen over dit kunstwerk?"
+              },
+              {
+                "text": "Wil je nog iets anders weten?"
+              },
+              {
+                "text": "Heb je nog andere vragen?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1645629256839",
+      "previous_sibling": "node_3_1645613089856"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Leuk dat je meer wilt weten over het Schreeuwend kind. Wat kan ik je hierover vertellen?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1645613089856",
+      "conditions": "@schilderij:(Schreeuwend kind)",
+      "dialog_node": "response_10_1646141438991",
+      "previous_sibling": "slot_1_1645697047869"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "U kijkt naar ***Portret van een vrouw, waarschijnlijk Maria Trip*** van Rembrandt van Rijn. Het komt uit 1639."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Ik heb nog een interessant fragment uit onze multimedia tour over dit schilderij. Wil je dit horen?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Bevestiging:",
+            "options": [
+              {
+                "label": "Ja",
+                "value": {
+                  "input": {
+                    "text": "Ja"
+                  }
+                }
+              },
+              {
+                "label": "Nee",
+                "value": {
+                  "input": {
+                    "text": "Nee"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1645613089856",
+      "conditions": "@schilderij:(Portret van een vrouw, waarschijnlijk Maria Trip)",
+      "dialog_node": "response_10_1646141440940",
+      "previous_sibling": "response_9_1646141439820"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit stilleven heeft de vorm van een liggende rechthoek met een formaat van 88 x 113 cm. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1646382304340",
+      "conditions": "$schilderij==\"Stilleven met vergulde bokaal\"",
+      "dialog_node": "response_10_1646382304341",
+      "previous_sibling": "response_9_1646382304341"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Voor slechts EUR 99 heb je 'm aan de muur hangen. Je krijgt dan helaas niet het origineel 😀. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1647025392911",
+      "conditions": "$schilderij==\"Portret van een vrouw, waarschijnlijk Maria Trip\"",
+      "dialog_node": "response_10_1647025392915",
+      "previous_sibling": "response_9_1647025392915"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit portret heeft de vorm van een staande rechthoek met een formaat van 53 x 40,3 cm."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1646382304340",
+      "conditions": "$schilderij==\"De avondschool\"",
+      "dialog_node": "response_11_1646382304341",
+      "previous_sibling": "response_10_1646382304341"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit schilderij kost meer dan onze Minister President per jaar verdient....en dan druk ik me nog voorzichtig uit..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1647025392911",
+      "conditions": "$schilderij==\"Stilleven met vergulde bokaal\"",
+      "dialog_node": "response_11_1647025392916",
+      "previous_sibling": "response_10_1647025392915"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ik begrijp dat je geïnteresseerd bent in Het toilet. Wat zou je hierover willen weten?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1645613089856",
+      "conditions": "@schilderij:(Het toilet)",
+      "dialog_node": "response_1_1646141443010",
+      "previous_sibling": "response_5_1646141442140"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "De geschatte waarde van dit schilderij is..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 4000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "een hele groot zak 💰💶💸."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1647025392911",
+      "conditions": "$schilderij==\"De avondschool\"",
+      "dialog_node": "response_12_1647025392916",
+      "previous_sibling": "response_11_1647025392916"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hendrick de Keyser maakte bijna een eeuw later uit buxushout een portret van een krijsend kindje. Er zit een bij op het hoofdje van de baby (de tandjes zijn nog niet door). De krullen, de plaats van het insect op het voorhoofd en de vorm van het oor doen sterk denken aan de kinderkopjes van Cupido of Amor die Cranach schilderde. Maar de expressie van het kind is veel heviger, Amor schreeuwt het uit van schrik en pijn. Het gesymboliseerde liefdesverdriet moet heel hevig zijn."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1646383987746",
+      "conditions": "$schilderij==\"Schreeuwend kind\"",
+      "dialog_node": "response_13_1646383987748"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Het toilet. Zittend op de rand van haar bed trekt een jonge vrouw met een hoofddoek en een met bont afgezet jakje een kous over haar rechtervoet. Op het kussen van het bed slaapt een hondje, op de vloer liggen twee sloffen en een po."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1646383987746",
+      "conditions": "$schilderij==\"Het toilet\"",
+      "dialog_node": "response_14_1646383987748",
+      "previous_sibling": "response_13_1646383987748"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Rembrandt schilderde Maria Trip toen ze 20 jaar oud was. Haar kostbare sieraden tonen de enorme rijkdom van haar familie. Zo is er bijvoorbeeld puur goud verwerkt in het lint van de waaier."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1646383987746",
+      "conditions": "$schilderij==\"Portret van een vrouw, waarschijnlijk Maria Trip\"",
+      "dialog_node": "response_15_1646383987748",
+      "previous_sibling": "response_14_1646383987748"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Stilleven met een vergulde bokaal. Op een tafel bekleed met een groen tafelkleed en twee linnendamasten servetten zijn uitgestald: tinnen borden met brood en een tinnen schaal met oesters, een glas met rode wijn, een olie- of azijnkannetje van glas, een zilveren zoutvat, een roemer met witte wijn, een verguld zilveren bokaal met deksel, een tinnen wijnkan en een neergelegde berkenmeier."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1646383987746",
+      "conditions": "$schilderij==\"Stilleven met vergulde bokaal\"",
+      "dialog_node": "response_16_1646383987748",
+      "previous_sibling": "response_15_1646383987748"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "In een donker lokaal heft een schoolmeester vermanend, zijn vinger tegen een jongen in de schaduw, terwijl een meisje bij helder kaarslicht geconcentreerd haar les opzegt. Zo krijgt het licht een bijbetekenis als het licht van het verstand. Dou toont hier hoe knap hij kunstlicht kan schilderen, met maar liefst vier verschillende lichtbronnen."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1646383987746",
+      "conditions": "$schilderij==\"De avondschool\"",
+      "dialog_node": "response_17_1646383987748",
+      "previous_sibling": "response_16_1646383987748"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "De avondschool is gemaakt door Gerard Dou."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "<i>Wist je dat: </i> Het Protestantse Nederlandse onderwijs werd destijds sterk gestimuleerd door middel van avondscholen waarin kinderen het woord van God (de Bijbel) gezamenlijk doornamen. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "parent": "node_3_1645708716071",
+      "conditions": "$schilderij==\"De avondschool\"",
+      "dialog_node": "response_2_1646141114071",
+      "previous_sibling": "response_9_1646141113107"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit object hangt in zaal 2.5 van het Rijksmuseum."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1647023855377",
+      "conditions": "$schilderij==\"Schreeuwend kind\"",
+      "dialog_node": "response_2_1647023855379"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Schreeuwend kind komt circa uit het jaar 1615."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "<i>Wist u dat: </i> Het thema van dit kunstwerk 'liefdesverdriet' is? Theocritus was een Griekse dichter uit de 3e eeuw voor Christus. Hij is in de moderne tijd bekend geworden door zijn herderspoëzie. Van hem zijn een kleine dertig ‘Idyllen’ bewaard gebleven. Het leidende thema is bijna altijd liefdesverdriet. Idylle 19 gaat over Cupido of Amor die, nadat hij honing heeft weggenomen uit een bijennest, gestoken wordt. Hij huilt uit bij zijn moeder, de liefdesgodin Venus, die hem een levenswijsheid bijbrengt. Hij, Amor, is net als de bijen: ook zijn pijlen brengen naast de honingzoete liefde, soms hevige steken teweeg in het hart van de mensen. Liefdesgeluk en liefdesverdriet zijn twee kanten van dezelfde medaille.\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "parent": "node_7_1645630279339",
+      "conditions": "$schilderij==\"Schreeuwend kind\"",
+      "dialog_node": "response_3_1646140829135"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit schilderij komt uit de periode 1660-1665."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "<i>Wist u dat: </i> Kinderen werkten destijds overdag. Er was toen nog sprake van kinderarbeid. Daarom was er overdag geen school maar alleen in de avonden."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 0,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "parent": "node_7_1645630279339",
+      "conditions": "$schilderij==\"De avondschool\"",
+      "dialog_node": "response_3_1646140959240",
+      "previous_sibling": "response_9_1646140952008"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit schilderij is te bewonderen in zaal 2.25 van het Rijksmuseum."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1647023855377",
+      "conditions": "$schilderij==\"Het toilet\"",
+      "dialog_node": "response_3_1647023855379",
+      "previous_sibling": "response_2_1647023855379"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://storage.googleapis.com/rijksmuseum_tours/assets/585_L1_nl.mp3",
+            "response_type": "audio",
+            "channel_options": {
+              "voice_telephony": {
+                "loop": false
+              }
+            }
+          }
+        ]
+      },
+      "parent": "node_8_1647337701236",
+      "conditions": "#bevestigen && $schilderij==\"Stilleven met vergulde bokaal\"",
+      "dialog_node": "response_3_1647337914826",
+      "previous_sibling": "response_9_1647337910476"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vrouw aan haar toilet komt uit de periode 1656-1662."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "<i>Wist u dat: </i> De vrouw in dit schilderij is een prostituee. De rode kous, pispot en de slofjes niet aan haar voeten betekent dat ze beschikbaar is."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "parent": "node_7_1645630279339",
+      "conditions": "$schilderij==\"Het toilet\"",
+      "dialog_node": "response_4_1646140868184",
+      "previous_sibling": "response_3_1646140829135"
+    },
+    {
+      "type": "response_condition",
+      "output": {},
+      "parent": "node_7_1647020529847",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_3_1645613089856"
+      },
+      "conditions": "@schilderij",
+      "dialog_node": "response_4_1647023287197"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit portret hangt in zaal 2.8 van het Rijksmuseum."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1647023855377",
+      "conditions": "$schilderij==\"Portret van een vrouw, waarschijnlijk Maria Trip\"",
+      "dialog_node": "response_4_1647023855379",
+      "previous_sibling": "response_3_1647023855379"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Wat een prachtig mooi schilderij is dit hè? Het hangt ook niet voor niets in onze Eregalerij."
+              },
+              {
+                "text": "Dit schilderij is omstreeks 1635 gemaakt door Willem Claesz. Heda."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Als je wilt, kan ik je in 1 minuut nog wat meer interessante weetjes over dit doek vertellen. Wil je dat?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Bevestiging:",
+            "options": [
+              {
+                "label": "Ja",
+                "value": {
+                  "input": {
+                    "text": "Ja"
+                  }
+                }
+              },
+              {
+                "label": "Nee",
+                "value": {
+                  "input": {
+                    "text": "Nee"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1645613089856",
+      "conditions": "@schilderij:(Stilleven met vergulde bokaal)",
+      "dialog_node": "response_5_1646141442140",
+      "previous_sibling": "response_10_1646141440940"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Je kunt dit schilderij bewonderen in onze Eregalerij van het Rijksmuseum."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1647023855377",
+      "conditions": "$schilderij==\"Stilleven met vergulde bokaal\"",
+      "dialog_node": "response_5_1647023855380",
+      "previous_sibling": "response_4_1647023855379"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://storage.googleapis.com/rijksmuseum_tours/assets/410_L1_nl.mp3",
+            "response_type": "audio",
+            "channel_options": {
+              "voice_telephony": {
+                "loop": false
+              }
+            }
+          }
+        ]
+      },
+      "parent": "node_8_1647337701236",
+      "conditions": "#bevestigen && $schilderij==\"Portret van een vrouw, waarschijnlijk Maria Trip\"",
+      "dialog_node": "response_5_1647337900755"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit portret is gemaakt door Rembrandt van Rijn. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "<i>Wist je dat: </i> Maria Trip de dochter van een wapenhandelaar was. Ze woonde in het grootste huis op de grachten: het huis Trip. Dit was tevens de eerste locatie van het Rijksmuseum."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "parent": "node_3_1645708716071",
+      "conditions": "$schilderij==\"Portret van een vrouw, waarschijnlijk Maria Trip\"",
+      "dialog_node": "response_6_1646141112271",
+      "previous_sibling": "response_8_1646141110735"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Je kunt dit schilderij zien in zaal 2.25 van het Rijksmuseum."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1647023855377",
+      "conditions": "$schilderij==\"De avondschool\"",
+      "dialog_node": "response_6_1647023855380",
+      "previous_sibling": "response_5_1647023855380"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Het beeldhouwkunst gemaakt uit buxushout heeft een hoogte van 17 cm. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1646382304340",
+      "conditions": "$schilderij==\"Schreeuwend kind\"",
+      "dialog_node": "response_7_1646382304341"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit schilderij is gemaakt door Jan Havicksz. Steen."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "<i>Wist u dat: </i> Het winter is op de schilderij? Dit is te zien aan de kokosmat die op de zwart en wit betegelde vloer ligt."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "parent": "node_3_1645708716071",
+      "conditions": "$schilderij==\"Het toilet\"",
+      "dialog_node": "response_8_1646141110735",
+      "previous_sibling": "response_9_1646141109718"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Het toilet heeft de vorm van een staande rechthoek met afgeronde bovenkant. Het formaat is 37 x 27,5 cm."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1646382304340",
+      "conditions": "$schilderij==\"Het toilet\"",
+      "dialog_node": "response_8_1646382304341",
+      "previous_sibling": "response_7_1646382304341"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hallo $naam. Leuk dat je er weer bent..."
+              },
+              {
+                "text": "Hallo $naam. Van harte welkom in ons museum! "
+              },
+              {
+                "text": "Hoi $naam! Wat leuk dat je ons museum komt bezoeken!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "Welkom",
+      "disabled": true,
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_3_1645613089856"
+      },
+      "conditions": "@schilderij",
+      "dialog_node": "response_8_1647018900473"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Oei....dat durf ik niet te zeggen. Dit object is in 2012 aan ons geschonken door een schenker die graag anoniem wil blijven..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1647025392911",
+      "conditions": "$schilderij==\"Schreeuwend kind\"",
+      "dialog_node": "response_8_1647025392915"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit schilderij komt ongeveer uit het jaar 1639."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "<i>Wist u dat: </i> Maria Trip was destijds de meest rijke vrijgezel van Amsterdam. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "parent": "node_7_1645630279339",
+      "conditions": "$schilderij==\"Portret van een vrouw, waarschijnlijk Maria Trip\"",
+      "dialog_node": "response_9_1646140910040",
+      "previous_sibling": "response_4_1646140868184"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit stilleven komt uit 1635."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "<i>Wist u dat: </i> De stillevens uit de Vlaams-Nederlandse schilderkunst uit de 17e eeuw zijn vooral beroemd om de stofuitdrukking, de weergave van het oppervlak van een voorwerp. In één stilleven laat de schilder zijn vaardigheid zien om tegelijkertijd bijvoorbeeld het karakter van een satijnen kleed, een droog brood, een mat ei, bedauwde druiven, een hard glanzend glas en een parelmoeren schelp weer te geven. Vaak gebruikten schilders hun geliefde objecten telkens opnieuw. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "parent": "node_7_1645630279339",
+      "conditions": "$schilderij==\"Stilleven met vergulde bokaal\"",
+      "dialog_node": "response_9_1646140952008",
+      "previous_sibling": "response_9_1646140910040"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit kunstwerk is toegeschreven aan Hendrick de Keyser."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1645708716071",
+      "conditions": "$schilderij==\"Schreeuwend kind\"",
+      "dialog_node": "response_9_1646141109718"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dit kunstwerk is gemaakt door Willem Claesz. Heda."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "<i>Wist je dat: </i> Stillevens gebruikt kunnen worden als symbool, bijvoorbeeld een 'memento mori' (vertaling: 'bedenk dat u sterfelijk bent' of 'denk aan je eigen sterfdag'), door een combinatie van een bijbel en een menselijke schedel weer te geven. \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "parent": "node_3_1645708716071",
+      "conditions": "$schilderij==\"Stilleven met vergulde bokaal\"",
+      "dialog_node": "response_9_1646141113107",
+      "previous_sibling": "response_6_1646141112271"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "***De avondschool*** is een schitterend schilderij gemaakt door Jan Steen. Het stamt uit de periode 1655 - 1660. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "time": 1500,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "Vind je het leuk om een fragment uit onze multimedia tour te beluisteren over dit schilderij?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Bevestiging:",
+            "options": [
+              {
+                "label": "Ja",
+                "value": {
+                  "input": {
+                    "text": "Ja"
+                  }
+                }
+              },
+              {
+                "label": "Nee",
+                "value": {
+                  "input": {
+                    "text": "Nee"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1645613089856",
+      "conditions": "@schilderij:(De avondschool)",
+      "dialog_node": "response_9_1646141439820",
+      "previous_sibling": "response_10_1646141438991"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Portret van een vrouw is een staande rechthoek met het formaat 107,5 x 82x2 cm."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "<i>Wist je dat: </i> Dat dit eigenlijk een soort tinder foto is? Maria trip is vrijgezel. De kleding en sieraden op dit schilderij kosten toen meer dan 20.000 gulden. Ter vergelijking: het jaarloon van een ambachtsman was toen maximaal 300 gulden. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          }
+        ]
+      },
+      "parent": "node_1_1646382304340",
+      "conditions": "$schilderij==\"Portret van een vrouw, waarschijnlijk Maria Trip\"",
+      "dialog_node": "response_9_1646382304341",
+      "previous_sibling": "response_8_1646382304341"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Op bol.com heb je 'm voor EUR 79,98, maar dat is niet wat wij er voor hebben betaald 😉."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1647025392911",
+      "conditions": "$schilderij==\"Het toilet\"",
+      "dialog_node": "response_9_1647025392915",
+      "previous_sibling": "response_8_1647025392915"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "source": "https://storage.googleapis.com/rijksmuseum_tours/assets/516_L1_nl.mp3",
+            "response_type": "audio",
+            "channel_options": {
+              "voice_telephony": {
+                "loop": false
+              }
+            }
+          }
+        ]
+      },
+      "parent": "node_8_1647337701236",
+      "conditions": "#bevestigen && $schilderij==\"De avondschool\"",
+      "dialog_node": "response_9_1647337910476",
+      "previous_sibling": "response_5_1647337900755"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1645613089856",
+      "variable": "$schilderij",
+      "dialog_node": "slot_1_1645697047869"
+    },
+    {
+      "type": "standard",
+      "title": "Welkom",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hallo $naam. Leuk dat je er weer bent..."
+              },
+              {
+                "text": "Hallo $naam. Van harte welkom in ons museum! "
+              },
+              {
+                "text": "Hoi $naam! Wat leuk dat je ons museum komt bezoeken!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1645705940680"
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welkom"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "2 pizza hawaii"
+    },
+    {
+      "text": "het toilet"
+    },
+    {
+      "text": "Melkmeisje"
+    }
+  ],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Bedoelde je:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 2,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Geen van bovengenoemde"
+    },
+    "human_agent_assist": {
+      "prompt": "Bedoelde je:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Schilderijen Skill",
+  "language": "nl",
+  "description": ""
+}

@@ -1,0 +1,273 @@
+{
+  "event": { "name": "message_processed" },
+  "options": {},
+  "payload": {
+    "output": {
+      "debug": {
+        "turn_events": [
+          {
+            "event": "action_visited",
+            "source": {
+              "type": "action",
+              "action": "action_18173",
+              "action_title": "Mortgage calculator"
+            },
+            "action_start_time": "2023-04-25T10:35:17.796548Z",
+            "condition_type": "user_defined",
+            "reason": "intent"
+          },
+          {
+            "event": "step_visited",
+            "source": {
+              "type": "step",
+              "step": "step_129",
+              "action": "action_18173",
+              "action_title": "Mortgage calculator"
+            },
+            "action_start_time": "2023-04-25T10:35:17.796548Z",
+            "first_step": true
+          },
+          {
+            "event": "step_visited",
+            "source": {
+              "type": "step",
+              "step": "step_872",
+              "action": "action_18173",
+              "action_title": "Mortgage calculator"
+            },
+            "action_start_time": "2023-04-25T10:35:17.796548Z",
+            "has_question": true
+          }
+        ],
+        "output_generic_mapping": [
+          { "source": { "type": "step", "step": "step_129", "action": "action_18173" } },
+          { "source": { "type": "step", "step": "step_872", "action": "action_18173" } }
+        ],
+        "log_messages": []
+      },
+      "intents": [{ "intent": "action_18173_intent_22211", "confidence": 0.9586504697799683 }],
+      "entities": [
+        {
+          "entity": "entity_6552",
+          "location": [10, 31],
+          "value": "Calculate my mortgage payments",
+          "confidence": 0.35
+        },
+        {
+          "entity": "entity_9138",
+          "location": [10, 31],
+          "value": "Calculate my mortgage payments",
+          "confidence": 0.35
+        }
+      ],
+      "generic": [
+        {
+          "response_type": "text",
+          "user_defined": { "type": "mc_first_step", "user_defined_type": "mc_first_step" },
+          "text": "I can help you use the Lendyr mortgage calculator. Since you're logged in, I can grab your credit score and auto-fill that information for you."
+        },
+        { "response_type": "text", "text": "What is your loan amount?" }
+      ],
+      "alternate_responses": [
+        {
+          "response_type": "suggestion",
+          "title": "You might want to try...",
+          "suggestions": [
+            {
+              "label": "Mortgage refinancing",
+              "value": {
+                "input": {
+                  "suggestion_id": "a:df369e8a-8956-4c4c-928a-ea0cccfb6cc8",
+                  "text": "How can I calculate my mortgage?",
+                  "options": { "restart": true },
+                  "intents": [{ "intent": "action_3587_intent_18588", "confidence": 1 }],
+                  "entities": [
+                    {
+                      "entity": "entity_6552",
+                      "location": [10, 31],
+                      "value": "Calculate my mortgage payments",
+                      "confidence": 0.35
+                    },
+                    {
+                      "entity": "entity_9138",
+                      "location": [10, 31],
+                      "value": "Calculate my mortgage payments",
+                      "confidence": 0.35
+                    }
+                  ]
+                }
+              },
+              "output": {},
+              "dialog_node": "action_3587"
+            },
+            {
+              "label": "Increase credit limit",
+              "value": {
+                "input": {
+                  "suggestion_id": "a:5af52283-69fc-43ef-9857-a9c58f292ac9",
+                  "text": "How can I calculate my mortgage?",
+                  "options": { "restart": true },
+                  "intents": [{ "intent": "action_26783_intent_15527", "confidence": 1 }],
+                  "entities": [
+                    {
+                      "entity": "entity_6552",
+                      "location": [10, 31],
+                      "value": "Calculate my mortgage payments",
+                      "confidence": 0.35
+                    },
+                    {
+                      "entity": "entity_9138",
+                      "location": [10, 31],
+                      "value": "Calculate my mortgage payments",
+                      "confidence": 0.35
+                    }
+                  ]
+                }
+              },
+              "output": {},
+              "dialog_node": "action_26783"
+            },
+            {
+              "label": "How do I figure out my loan amount?",
+              "value": {
+                "input": {
+                  "suggestion_id": "a:491f8fb6-7c0d-4ede-9275-20435d1fdc5a",
+                  "text": "How can I calculate my mortgage?",
+                  "options": { "restart": true },
+                  "intents": [{ "intent": "action_2100_intent_21486", "confidence": 1 }],
+                  "entities": [
+                    {
+                      "entity": "entity_6552",
+                      "location": [10, 31],
+                      "value": "Calculate my mortgage payments",
+                      "confidence": 0.35
+                    },
+                    {
+                      "entity": "entity_9138",
+                      "location": [10, 31],
+                      "value": "Calculate my mortgage payments",
+                      "confidence": 0.35
+                    }
+                  ]
+                }
+              },
+              "output": {},
+              "dialog_node": "action_2100"
+            },
+            {
+              "label": "Using points for airfare",
+              "value": {
+                "input": {
+                  "suggestion_id": "a:0f0acb39-eb33-49c3-8aa2-87f3ead5f610",
+                  "text": "How can I calculate my mortgage?",
+                  "options": { "restart": true },
+                  "intents": [{ "intent": "action_25756_intent_22279", "confidence": 1 }],
+                  "entities": [
+                    {
+                      "entity": "entity_6552",
+                      "location": [10, 31],
+                      "value": "Calculate my mortgage payments",
+                      "confidence": 0.35
+                    },
+                    {
+                      "entity": "entity_9138",
+                      "location": [10, 31],
+                      "value": "Calculate my mortgage payments",
+                      "confidence": 0.35
+                    }
+                  ]
+                }
+              },
+              "output": {},
+              "dialog_node": "action_25756"
+            },
+            {
+              "label": "What languages do you speak?",
+              "value": {
+                "input": {
+                  "suggestion_id": "a:1a5f9738-4c1e-4064-90dc-69acb447a386",
+                  "text": "How can I calculate my mortgage?",
+                  "options": { "restart": true },
+                  "intents": [{ "intent": "action_45160_intent_13364", "confidence": 1 }],
+                  "entities": [
+                    {
+                      "entity": "entity_6552",
+                      "location": [10, 31],
+                      "value": "Calculate my mortgage payments",
+                      "confidence": 0.35
+                    },
+                    {
+                      "entity": "entity_9138",
+                      "location": [10, 31],
+                      "value": "Calculate my mortgage payments",
+                      "confidence": 0.35
+                    }
+                  ]
+                }
+              },
+              "output": {},
+              "dialog_node": "action_45160"
+            }
+          ]
+        }
+      ]
+    },
+    "user_id": "anonymous_IBMuid-5f634ded-661a-42ea-a607-558fde17a56d",
+    "context": {
+      "global": {
+        "system": {
+          "session_start_time": "2023-04-25T10:35:16.663Z",
+          "user_id": "anonymous_IBMuid-5f634ded-661a-42ea-a607-558fde17a56d",
+          "timezone": "Europe/Brussels",
+          "turn_count": 1,
+          "state": "eyJpZCI6IjM2ZTFhNGFjLWY0MTYtNDQ4ZC05OWU0LTdiMmNmNTc2NzcyYiIsIm5hbWUiOiJkcmFmdCIsInNraWxscyI6W3siY29uZmlnIjp7Im1lc3NhZ2UiOm51bGwsInZlcnNpb24iOiIyMDE4LTEyLTAzIiwiaGlnaGxpZ2h0IjpudWxsLCJpbnN0YW5jZV9pZCI6bnVsbCwiY29sbGVjdGlvbl9pZCI6bnVsbCwiZGlzY292ZXJ5X3VybCI6bnVsbCwiZXJyb3JfbWVzc2FnZSI6bnVsbCwiZW52aXJvbm1lbnRfaWQiOm51bGwsInJlc3VsdHNfcGVyX3BhZ2UiOm51bGwsIm1heF90b3RhbF9yZXN1bHRzIjpudWxsLCJub19yZXN1bHRfbWVzc2FnZSI6bnVsbCwicGFnaW5hdGlvbl9lbmFibGVkIjpmYWxzZSwic2NoZW1hX21hcHBpbmdfdXJsIjpudWxsLCJtYXhfcHJpbWFyeV9yZXN1bHRzIjpudWxsLCJzY2hlbWFfbWFwcGluZ19ib2R5IjpudWxsLCJiYXNpY19hdXRoZW50aWNhdGlvbiI6bnVsbCwic2NoZW1hX21hcHBpbmdfdGl0bGUiOm51bGx9LCJkaXNhYmxlZCI6dHJ1ZSwibGFuZ3VhZ2UiOiJ4eCIsInNraWxsX3R5cGUiOiJzZWFyY2giLCJza2lsbF9yZWZlcmVuY2UiOiJzZWFyY2ggc2tpbGwiLCJza2lsbF9zbmFwc2hvdF9pZCI6bnVsbCwic2tpbGxfc25hcHNob3RfbmFtZSI6bnVsbCwid29ya2VyX2RlZmluaXRpb25faWQiOiIzZGZhYzkwMC0xZTQwLTQ5M2QtYTA0NS1hMjE0NDFhY2I4NWMifSx7ImNvbmZpZyI6eyJhY3Rpb25zIjpmYWxzZSwid29ya3NwYWNlX2lkIjoiN2NlNjA2ZWUtNGM2OS00M2M2LTliMmQtZjkxMjAwMDE0YmI1Iiwic2tpbGxfcmVmZXJlbmNlX2lkIjpudWxsfSwiZGlzYWJsZWQiOnRydWUsImxhbmd1YWdlIjoiZW4iLCJza2lsbF90eXBlIjoiZGlhbG9nIiwic2tpbGxfcmVmZXJlbmNlIjoibWFpbiBza2lsbCIsInNraWxsX3NuYXBzaG90X2lkIjpudWxsLCJza2lsbF9zbmFwc2hvdF9uYW1lIjpudWxsLCJ3b3JrZXJfZGVmaW5pdGlvbl9pZCI6IjdjZTYwNmVlLTRjNjktNDNjNi05YjJkLWY5MTIwMDAxNGJiNSJ9LHsiY29uZmlnIjp7ImFjdGlvbnMiOnRydWUsIndvcmtzcGFjZV9pZCI6ImFmMGJhZmVhLTY1MDctNGUzMy05ZDFlLTdkYWY5ZjI4M2FkZSIsInNraWxsX3JlZmVyZW5jZV9pZCI6bnVsbH0sImRpc2FibGVkIjpmYWxzZSwibGFuZ3VhZ2UiOiJlbiIsInNraWxsX3R5cGUiOiJhY3Rpb24iLCJza2lsbF9yZWZlcmVuY2UiOiJhY3Rpb25zIHNraWxsIiwic2tpbGxfc25hcHNob3RfaWQiOm51bGwsInNraWxsX3NuYXBzaG90X25hbWUiOm51bGwsIndvcmtlcl9kZWZpbml0aW9uX2lkIjoiYWYwYmFmZWEtNjUwNy00ZTMzLTlkMWUtN2RhZjlmMjgzYWRlIn1dLCJsYW5ndWFnZSI6ImVuIiwidGVuYW50X2lkIjoiNmVmOGJhMmQtOTk3ZC00NjZjLTljZDctOWYwNGJhMjIxNmY2IiwiZW52aXJvbm1lbnQiOiJkcmFmdCIsImRlZmF1bHRfaW5zdGFuY2UiOnRydWUsImRpc2FibGVfZmFsbGJhY2siOnRydWUsImFnZW50X2RlZmluaXRpb25faWQiOiIzNmUxYTRhYy1mNDE2LTQ0OGQtOTllNC03YjJjZjU3Njc3MmIiLCJwYXJlbnRfYXNzaXN0YW50X2lkIjoiNDg2Zjg4YTctZTg4MC00YmZkLWEyYWUtMGY0ZWRmOWFlZjhmIn0="
+        },
+        "session_id": "2a26463c-0bac-49e0-86ea-e35605f0adb1"
+      },
+      "integrations": {
+        "chat": {
+          "browser_info": {
+            "browser_name": "safari",
+            "browser_version": "16.4.0",
+            "browser_OS": "Mac OS",
+            "language": "en-US",
+            "page_url": "https://eu-de.assistant.watson.cloud.ibm.com/crn%3Av1%3Abluemix%3Apublic%3Aconversation%3Aeu-de%3Aa%2F980d7ef5b1896b370242457b5e4e72cd%3A6ef8ba2d-997d-466c-9cd7-9f04ba2216f6%3A%3A/assistants/486f88a7-e880-4bfd-a2ae-0f4edf9aef8f/preview",
+            "screen_resolution": "width: 1728, height: 1117",
+            "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15",
+            "client_ip_address": "78.21.155.108",
+            "ip_address_list": ["78.21.155.108", "10.85.155.121", "172.30.63.0"]
+          }
+        },
+        "channel": {
+          "name": "Web chat",
+          "private": { "user": { "id": "anonymous_IBMuid-5f634ded-661a-42ea-a607-558fde17a56d" } }
+        }
+      },
+      "skills": {
+        "actions skill": {
+          "action_variables": { "step_129": true },
+          "skill_variables": {
+            "credit_card": "808",
+            "credit_score": 750,
+            "discovery_date_version": "2022-08-01",
+            "discovery_instance_id": "9c258e35-c6b4-4e0c-9661-454c090df5eb",
+            "discovery_project_id": "21df084a-d2dd-4889-8d82-59871c600006",
+            "jokes_told": 0,
+            "table_results_enabled": false,
+            "user_defined_responses_enabled": false
+          },
+          "system": {
+            "state": "eyJzZXNzaW9uX3N0YXJ0X3RpbWUiOiIyMDIzLTA0LTI1VDEwOjM1OjE2LjY2M1oiLCJzZXNzaW9uX2lkIjoiMmEyNjQ2M2MtMGJhYy00OWUwLTg2ZWEtZTM1NjA1ZjBhZGIxIiwic2tpbGxfcmVmZXJlbmNlIjoiYWN0aW9ucyBza2lsbCIsImFzc2lzdGFudF9pZCI6IjM2ZTFhNGFjLWY0MTYtNDQ4ZC05OWU0LTdiMmNmNTc2NzcyYiIsInNoYWRvd192YXJpYWJsZXMiOnt9LCJyZXN0YXJ0X2RvbmVfZm9yX3R1cm4iOjEsImRpZ3Jlc3NlZF9mcm9tIjpudWxsLCJzdWdnZXN0aW9ucyI6eyJtZXRhZGF0YSI6e30sInN1Z2dlc3Rpb25zIjpbeyJzdWdnZXN0aW9uX2lkIjoiZDo4NjZiOWUzNS0xOTA1LTQ4NmUtYmU1Zi0yOTFkOTU3YmNkYTUiLCJwb3NpdGlvbiI6MCwib3JpZ2luIjoiZGlzYW1iaWd1YXRpb24ifSx7InN1Z2dlc3Rpb25faWQiOiJhOjQ5MWY4ZmI2LTdjMGQtNGVkZS05Mjc1LTIwNDM1ZDFmZGM1YSIsInBvc2l0aW9uIjoyLCJvcmlnaW4iOiJhbHRlcm5hdGVfcmVzcG9uc2VzIn0seyJzdWdnZXN0aW9uX2lkIjoiYTowZjBhY2IzOS1lYjMzLTQ5YzMtOGFhMi04N2YzZWFkNWY2MTAiLCJwb3NpdGlvbiI6Mywib3JpZ2luIjoiYWx0ZXJuYXRlX3Jlc3BvbnNlcyJ9LHsic3VnZ2VzdGlvbl9pZCI6ImE6NWFmNTIyODMtNjlmYy00M2VmLTk4NTctYTljNThmMjkyYWM5IiwicG9zaXRpb24iOjEsIm9yaWdpbiI6ImFsdGVybmF0ZV9yZXNwb25zZXMifSx7InN1Z2dlc3Rpb25faWQiOiJhOjFhNWY5NzM4LTRjMWUtNDA2NC05MGRjLTY5YWNiNDQ3YTM4NiIsInBvc2l0aW9uIjo0LCJvcmlnaW4iOiJhbHRlcm5hdGVfcmVzcG9uc2VzIn0seyJzdWdnZXN0aW9uX2lkIjoiYTpkZjM2OWU4YS04OTU2LTRjNGMtOTI4YS1lYTBjY2NmYjZjYzgiLCJwb3NpdGlvbiI6MCwib3JpZ2luIjoiYWx0ZXJuYXRlX3Jlc3BvbnNlcyJ9XX0sImxhc3RfZGlzYW1iaWd1YXRpb25fZXZlbnRfaWQiOiI0Y2Q3MjIwNS0wNDEzLTRkOTMtOGU0Zi1iN2FhMzAxZjkxMWYiLCJsYXN0X2FsdGVybmF0ZV9yZXNwb25zZXNfZXZlbnRfaWQiOiJlY2I2ZjA1OS05MGRkLTQ4ZjUtYTNkYi01YjhhNDIyNzQ1OTQiLCJub19hY3Rpb25fbWF0Y2hlc19jb3VudCI6MCwiX25vZGVfb3V0cHV0X21hcCI6eyJhY3Rpb25fMTgxNzMgc3RlcF8xMjkiOnsiMCI6WzBdfSwiYWN0aW9uXzE4MTczIHN0ZXBfODcyIjp7IjAiOlswXX19LCJtZW50aW9uc19tZW1vcnkiOlt7ImlucHV0X3RleHQiOiJIb3cgY2FuIEkgY2FsY3VsYXRlIG15IG1vcnRnYWdlPyIsImVudGl0aWVzIjpbeyJlbnRpdHkiOiJlbnRpdHlfOTEzOCIsImxvY2F0aW9uIjpbMTAsMzFdLCJ2YWx1ZSI6IkNhbGN1bGF0ZSBteSBtb3J0Z2FnZSBwYXltZW50cyIsImNvbmZpZGVuY2UiOjAuMzV9LHsiZW50aXR5IjoiZW50aXR5XzY1NTIiLCJsb2NhdGlvbiI6WzEwLDMxXSwidmFsdWUiOiJDYWxjdWxhdGUgbXkgbW9ydGdhZ2UgcGF5bWVudHMiLCJjb25maWRlbmNlIjowLjM1fV19XSwiYWN0aW9uX3N0YWNrIjpbeyJhY3Rpb24iOiJhY3Rpb25fMTgxNzMiLCJhY3Rpb25fc3RhcnRfdGltZSI6IjIwMjMtMDQtMjVUMTA6MzU6MTcuNzk2NTQ4WiIsImN1cnJlbnRfc3RlcCI6InN0ZXBfODcyIiwidHJpZXNfZWxhcHNlZCI6eyJzdGVwXzg3MiI6MX19XX0="
+          }
+        },
+        "main skill": {
+          "system": {},
+          "user_defined": {
+            "language": "nl",
+            "original_input": "Hoe kan ik mijn hypotheek berekenen ?"
+          }
+        }
+      }
+    }
+  }
+}

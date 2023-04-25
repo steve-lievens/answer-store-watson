@@ -1,0 +1,10 @@
+key : WAML-MC-TEXT01
+
+en : I can help you use the Lendyr mortgage calculator. Since you're logged in, I can grab your credit score and auto-fill that information for you.
+nl : I kan u helpen met het gebruik van de Lendyr hypotheek calculator. Aangezien u zich al aangemeld heeft, kan ik uw credic score opzoeken en deze informatie automatisch voor u invullen.
+
+
+key : WAML-MC-TEXT02
+
+en : What is your loan amount?
+nl : Wat is het bedrag van de lening ?
